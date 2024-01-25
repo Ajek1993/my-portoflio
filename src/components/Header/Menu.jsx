@@ -30,7 +30,7 @@ export default function Menu() {
         {menuItems.map((item, index) => (
           <NavbarItem key={`${item}-${index}`}>
             <Link
-              className="hover:text-primary text-xl"
+              className="hover:text-primary text-2xl"
               color="foreground"
               href="#"
             >
@@ -43,7 +43,7 @@ export default function Menu() {
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
-              className="hover:text-primary w-full"
+              className="hover:text-primary w-full text-xl py-2"
               color="foreground"
               href="#"
               size="lg"
