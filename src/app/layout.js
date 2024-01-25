@@ -1,8 +1,8 @@
-import { Inter } from "next/font/google";
+import { Kanit } from "next/font/google";
 import "./globals.css";
 import NextProvider from "@/providers/NextProvider";
 
-const inter = Inter({ subsets: ["latin"] });
+const kanit = Kanit({ weight: "400", subsets: ["latin"] });
 
 export const metadata = {
   title: "Arkadiusz Sarach - porfolio",
@@ -12,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={kanit.className}>
         <NextProvider>{children}</NextProvider>
       </body>
     </html>
