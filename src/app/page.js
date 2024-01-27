@@ -1,7 +1,8 @@
 "use client";
 
 import AboutMe from "@/components/AboutMe/AboutMe";
-import Header from "@/components/Header/Header";
+import Introduction from "@/components/Introduction/Introduction";
+import Header from "@/components/Header";
 
 import Aos from "aos"; //Library for Animations
 import "aos/dist/aos.css";
@@ -15,7 +16,10 @@ export default function Home() {
   return (
     <div className="xl:container">
       <Header />
-      <AboutMe />
+      <main>
+        <Introduction />
+        <AboutMe />
+      </main>
     </div>
   );
 }

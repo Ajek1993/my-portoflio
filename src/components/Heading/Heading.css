@@ -1,0 +1,10 @@
+.section__header:after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 1rem);
+  height: 5px;
+  width: 4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}

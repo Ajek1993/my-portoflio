@@ -13,7 +13,7 @@ import {
   Link,
 } from "@nextui-org/react";
 
-export default function Menu() {
+export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = ["Home", "About me", "Projects", "Contact"];
