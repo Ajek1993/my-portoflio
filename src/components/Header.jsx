@@ -22,7 +22,7 @@ export default function Header() {
     <Navbar
       onMenuOpenChange={setIsMenuOpen}
       maxWidth="2xl"
-      className="pt-4 bg-inherit"
+      className="pt-4 bg-inherit border-solid border-b-2 border-primary sm:border-none"
     >
       <NavbarContent>
         <NavbarBrand>

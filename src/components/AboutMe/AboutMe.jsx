@@ -5,7 +5,7 @@ import "./AboutMe.css";
 
 export default function AboutMe() {
   return (
-    <section className="max-w-4xl mx-auto">
+    <section className="max-w-4xl mx-auto mb-40">
       <Heading title="About me" />
       <div className="md:flex md:gap-x-12 lg:gap-x-24 px-4 md:px-6">
         <p className="text-center w-full md:w-2/3 leading-8">

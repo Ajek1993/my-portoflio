@@ -9,6 +9,8 @@ import "aos/dist/aos.css";
 
 import { useEffect } from "react";
 import Projects from "@/components/Projects/Projects";
+import Technologies from "@/components/Technologies/Technologies";
+import Contact from "@/components/Contact/Contact";
 
 export default function Home() {
   useEffect(() => {
@@ -16,12 +18,18 @@ export default function Home() {
   }, []);
   return (
     <div className="xl:container">
-      <Header />
+      <header>
+        <Header />
+      </header>
       <main>
         <Introduction />
         <AboutMe />
         <Projects />
+        <Technologies />
       </main>
+      <footer>
+        <Contact />
+      </footer>
     </div>
   );
 }
