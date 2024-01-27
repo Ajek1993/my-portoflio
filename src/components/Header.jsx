@@ -19,7 +19,11 @@ export default function Header() {
   const menuItems = ["Home", "About me", "Projects", "Contact"];
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen} maxWidth="2xl" className="pt-4">
+    <Navbar
+      onMenuOpenChange={setIsMenuOpen}
+      maxWidth="2xl"
+      className="pt-4 bg-inherit"
+    >
       <NavbarContent>
         <NavbarBrand>
           <Image src="/rocket-solid.svg" width={40} height={40} alt="Logo" />

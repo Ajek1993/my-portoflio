@@ -4,6 +4,7 @@
   top: calc(100% + 1rem);
   height: 5px;
   width: 4rem;
+  background: var(--color-primary-blue);
   left: 50%;
   transform: translateX(-50%);
   border-radius: 5px;
