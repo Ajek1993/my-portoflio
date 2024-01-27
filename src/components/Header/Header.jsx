@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <>
       <Menu />
-      <div className="h-screen max-w-7xl mx-auto flex flex-col justify-center sm:items-start items-center text-center sm:text-start px-4 md:px-6 ">
+      <div className="h-screen mx-auto flex flex-col justify-center sm:items-start items-center text-center sm:text-start px-4 md:px-6 ">
         <p
           data-aos="fade-in"
           data-aos-duration="500"

@@ -13,9 +13,9 @@ export default function Home() {
     Aos.init({ duration: 1000 });
   }, []);
   return (
-    <>
+    <div className="xl:container">
       <Header />
       <AboutMe />
-    </>
+    </div>
   );
 }
