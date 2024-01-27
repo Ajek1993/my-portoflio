@@ -8,6 +8,7 @@ import Aos from "aos"; //Library for Animations
 import "aos/dist/aos.css";
 
 import { useEffect } from "react";
+import Projects from "@/components/Projects/Projects";
 
 export default function Home() {
   useEffect(() => {
@@ -19,6 +20,7 @@ export default function Home() {
       <main>
         <Introduction />
         <AboutMe />
+        <Projects />
       </main>
     </div>
   );

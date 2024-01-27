@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Introduction() {
   return (
-    <section className="h-screen mx-auto flex flex-col justify-center sm:items-start items-center text-center sm:text-start px-4 md:px-6 ">
+    <section className="h-screen mx-auto flex flex-col justify-center sm:items-start items-center text-center sm:text-start px-4 md:px-6">
       <p
         data-aos="fade-in"
         data-aos-duration="1000"
