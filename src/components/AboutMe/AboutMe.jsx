@@ -8,7 +8,11 @@ export default function AboutMe() {
     <section className="max-w-4xl mx-auto mb-40">
       <Heading title="About me" />
       <div className="md:flex md:gap-x-12 lg:gap-x-24 px-4 md:px-6">
-        <p className="text-center w-full md:w-2/3 leading-8">
+        <p
+          className="text-center w-full md:w-2/3 leading-8"
+          data-aos="fade-up-right"
+          data-aos-duration="1000"
+        >
           <br></br>
           <br></br>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, hic
@@ -23,7 +27,11 @@ export default function AboutMe() {
           tempora ipsa laudantium harum, earum voluptatum ullam perferendis
           tenetur aliquam.
         </p>
-        <div className="flex justify-center items-center my-8">
+        <div
+          className="flex justify-center items-center my-8"
+          data-aos="fade-up-left"
+          data-aos-duration="1000"
+        >
           <div className="myPicture">
             <Image
               src="/me.jpg"
