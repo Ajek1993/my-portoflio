@@ -20,8 +20,12 @@ export default function Header() {
 
   return (
     <Navbar
-      onMenuOpenChange={setIsMenuOpen}
+      onMenuOpenChange={(isOpen) => {
+        console.log("Menu Open:", isOpen);
+        setIsMenuOpen(isOpen);
+      }}
       className="pt-4 bg-inherit border-solid border-b-2 border-primary sm:border-none"
+      position="sticky"
     >
       <NavbarContent>
         <NavbarBrand>
@@ -31,13 +35,13 @@ export default function Header() {
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         {menuItems.map((item, index) => {
-          const sectionNAme = item.toLocaleLowerCase().replace(" ", "");
+          const sectionName = item.toLocaleLowerCase().replace(" ", "");
           return (
             <NavbarItem key={`${item}-${index}`}>
               <Link
                 className="hover:text-primary text-2xl"
                 color="foreground"
-                href={`/#${sectionNAme}`}
+                href={`/#${sectionName}`}
               >
                 {item}
               </Link>
@@ -46,18 +50,22 @@ export default function Header() {
         })}
       </NavbarContent>
       <NavbarMenu className="mt-4">
-        {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
-            <Link
-              className="hover:text-primary w-full text-xl py-2"
-              color="foreground"
-              href="#"
-              size="lg"
-            >
-              {item}
-            </Link>
-          </NavbarMenuItem>
-        ))}
+        {menuItems.map((item, index) => {
+          const sectionName = item.toLocaleLowerCase().replace(" ", "");
+          return (
+            <NavbarMenuItem key={`${item}-${index}`}>
+              <Link
+                className="hover:text-primary w-full text-xl py-2"
+                color="foreground"
+                href={`/#${sectionName}`}
+                size="lg"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {item}
+              </Link>
+            </NavbarMenuItem>
+          );
+        })}
       </NavbarMenu>
       <NavbarMenuToggle
         aria-label={isMenuOpen ? "Close menu" : "Open menu"}
