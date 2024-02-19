@@ -21,7 +21,6 @@ export default function Header() {
   return (
     <Navbar
       onMenuOpenChange={setIsMenuOpen}
-      maxWidth="2xl"
       className="pt-4 bg-inherit border-solid border-b-2 border-primary sm:border-none"
     >
       <NavbarContent>
@@ -31,17 +30,20 @@ export default function Header() {
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
-        {menuItems.map((item, index) => (
-          <NavbarItem key={`${item}-${index}`}>
-            <Link
-              className="hover:text-primary text-2xl"
-              color="foreground"
-              href="#"
-            >
-              {item}
-            </Link>
-          </NavbarItem>
-        ))}
+        {menuItems.map((item, index) => {
+          const sectionNAme = item.toLocaleLowerCase().replace(" ", "");
+          return (
+            <NavbarItem key={`${item}-${index}`}>
+              <Link
+                className="hover:text-primary text-2xl"
+                color="foreground"
+                href={`/#${sectionNAme}`}
+              >
+                {item}
+              </Link>
+            </NavbarItem>
+          );
+        })}
       </NavbarContent>
       <NavbarMenu className="mt-4">
         {menuItems.map((item, index) => (

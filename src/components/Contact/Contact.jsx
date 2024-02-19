@@ -3,7 +3,7 @@ import Heading from "../Heading/Heading";
 
 export default function Contact() {
   return (
-    <section>
+    <section id="contact">
       <Heading title="Contact" />
     </section>
   );

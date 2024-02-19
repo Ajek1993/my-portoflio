@@ -3,7 +3,7 @@ import Heading from "../Heading/Heading";
 
 export default function Projects() {
   return (
-    <section>
+    <section id="projects">
       <Heading title="Projects" />
     </section>
   );
