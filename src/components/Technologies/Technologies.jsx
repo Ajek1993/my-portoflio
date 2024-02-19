@@ -1,19 +1,6 @@
 import React from "react";
 import Heading from "../Heading/Heading";
-import {
-  HtmlIcon,
-  CSSIcon,
-  SassIcon,
-  TailwindCSSIcon,
-  JavascriptIcon,
-  ReactIcon,
-  NextIcon,
-  NodeIcon,
-  ExpressIcon,
-  GitIcon,
-  GitHubIcon,
-  icons,
-} from "../Icons";
+import { icons } from "../Icons";
 import "./Technologies.css";
 
 export default function Technologies() {
