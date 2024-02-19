@@ -18,6 +18,17 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      spacing: {
+        iconSocials: "30px",
+        iconMobile: "50px",
+        iconSmall: "55px",
+        iconMedium: "60px",
+        iconLarge: "65px",
+        iconButtonMobile: "36px",
+        iconButtonSmall: "40px",
+        iconButtonMedium: "44px",
+        iconButtonLarge: "48px",
+      },
     },
   },
   darkMode: "class",
