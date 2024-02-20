@@ -8,7 +8,7 @@ export default function Contact() {
     <section id="contact">
       <Heading title="Contact" />
       <ul
-        className="text-center mb-5 flex justify-center gap-4"
+        className="text-center my-24 flex justify-center gap-4"
         data-aos="zoom-in"
       >
         {contactIcons.map((contactIcon) => (
