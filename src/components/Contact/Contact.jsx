@@ -14,7 +14,7 @@ export default function Contact() {
         {contactIcons.map((contactIcon) => (
           <Link
             color="foreground"
-            className="flex justify-center items-center w-14 h-14 border rounded-sm"
+            className="flex justify-center items-center w-14 h-14 border rounded-sm hover:scale-125 duration-400"
             key={contactIcon.link}
             href={contactIcon.link}
             target="_blank"

@@ -2,7 +2,6 @@ import React from "react";
 import { Button } from "@nextui-org/react";
 import Heading from "../Heading/Heading";
 import { icons, PortfolioIcon } from "../Icons";
-import "./Technologies.css";
 import Link from "next/link";
 
 export default function Technologies() {
@@ -19,7 +18,7 @@ export default function Technologies() {
               data-aos-delay={`${id * 100}`}
             >
               {icon.Icon}
-              <p>{icon.name}</p>
+              <p className="lg:text-lg">{icon.name}</p>
             </li>
           );
         })}
