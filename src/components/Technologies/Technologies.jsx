@@ -24,7 +24,7 @@ export default function Technologies() {
         })}
       </ul>
       <div
-        className="portfolio flex flex-col justify-center items-center gap-4 my-60"
+        className="portfolio flex flex-col justify-center items-center gap-4 py-60"
         data-aos="fade-right"
       >
         <PortfolioIcon />

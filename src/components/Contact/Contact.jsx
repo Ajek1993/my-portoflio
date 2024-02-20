@@ -8,7 +8,7 @@ export default function Contact() {
     <section id="contact">
       <Heading title="Contact" />
       <ul
-        className="text-center my-24 flex justify-center gap-4"
+        className="text-center py-20 flex justify-center gap-4"
         data-aos="zoom-in"
       >
         {contactIcons.map((contactIcon) => (
@@ -24,7 +24,7 @@ export default function Contact() {
         ))}
       </ul>
       <p
-        className="px-2 mx-auto sm:w-2/3 md:w:1/2 text-xs md:text-base text-foreground-500 leading-6 text-center"
+        className="px-6 py-10 mx-auto sm:w-2/3 md:w:1/2 text-xs md:text-base text-foreground-500 leading-6 text-center"
         data-aos="zoom-in"
       >
         If you are interested in discussing potential opportunities,
