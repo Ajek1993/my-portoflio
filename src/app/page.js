@@ -11,9 +11,7 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <div className="xl:container">
-      <header>
-        <Header />
-      </header>
+      <Header />
       <main>
         <Introduction />
         <AboutMe />

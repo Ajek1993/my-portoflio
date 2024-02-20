@@ -20,12 +20,11 @@ export default function Header() {
 
   return (
     <Navbar
-      onMenuOpenChange={(isOpen) => {
-        console.log("Menu Open:", isOpen);
-        setIsMenuOpen(isOpen);
-      }}
+      isBordered
+      isMenuOpen={isMenuOpen}
+      onMenuOpenChange={setIsMenuOpen}
       className="pt-4 bg-inherit border-solid border-b-2 border-primary sm:border-none"
-      position="sticky"
+      position="static"
     >
       <NavbarContent>
         <NavbarBrand>
