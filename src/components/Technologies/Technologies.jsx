@@ -1,11 +1,13 @@
 import React from "react";
+import { Button } from "@nextui-org/react";
 import Heading from "../Heading/Heading";
-import { icons } from "../Icons";
+import { icons, PortfolioIcon } from "../Icons";
 import "./Technologies.css";
+import Link from "next/link";
 
 export default function Technologies() {
   return (
-    <section className="mx-auto mb-28 md:mb-48 max-w-screen-lg">
+    <section className="mx-auto mb-28 md:mb-48 max-w-screen-lg px-4">
       <Heading title="Technologies" />
       <ul className="technologies mb-20 md:mb-32 grid justify-items-center items-stretch justify-center grid-cols-[repeat(auto-fit,minmax(90px,90px))] gap-7 sm:grid-cols-[repeat(auto-fit,minmax(110px,110px))] sm:gap-8 md:grid-cols-[repeat(auto-fit,minmax(125px,125px))] lg:grid-cols-[repeat(auto-fit,minmax(140px,140px))]">
         {icons.map((icon, id) => {
@@ -21,40 +23,35 @@ export default function Technologies() {
             </li>
           );
         })}
-        {/* <li>
-          <HtmlIcon />
-        </li>
-        <li>
-          <CSSIcon />
-        </li>
-        <li>
-          <SassIcon />
-        </li>
-        <li>
-          <TailwindCSSIcon />
-        </li>
-        <li>
-          <JavascriptIcon />
-        </li>
-        <li>
-          <ReactIcon />
-        </li>
-        <li>
-          <NextIcon />
-        </li>
-        <li>
-          <NodeIcon />
-        </li>
-        <li>
-          <ExpressIcon />
-        </li>
-        <li>
-          <GitIcon />
-        </li>
-        <li>
-          <GitHubIcon />
-        </li> */}
       </ul>
+      <div
+        className="portfolio flex flex-col justify-center items-center gap-4"
+        data-aos="fade-right"
+      >
+        <PortfolioIcon />
+        <p className="max-w-[350px] lg:max-w-[400px] text-center text-foreground lg:text-lg">
+          Thank you for considering my profile! If you're looking for more
+          information about my skills, feel free to check my CV below:
+        </p>
+        <div className="flex flex-wrap justify-center gap-4 mt-8">
+          <Link href={"./Arkadiusz.Sarach_CV.pdf"}>
+            <Button radius="full" color="primary" variant="shadow" size="lg">
+              Curriculum Vitae PL
+            </Button>
+          </Link>
+          <Link href={"./Arkadiusz.Sarach_CV_ENG.pdf"}>
+            <Button
+              radius="full"
+              color="primary"
+              variant="shadow"
+              size="lg"
+              onCl
+            >
+              Curriculum Vitae ENG
+            </Button>
+          </Link>
+        </div>
+      </div>
     </section>
   );
 }

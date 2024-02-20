@@ -48,7 +48,7 @@ export default function Header() {
           );
         })}
       </NavbarContent>
-      <NavbarMenu className="mt-4">
+      <NavbarMenu className="mt-4 bg-inherit">
         {menuItems.map((item, index) => {
           const sectionName = item.toLocaleLowerCase().replace(" ", "");
           return (
