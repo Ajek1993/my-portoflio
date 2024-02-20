@@ -12,16 +12,14 @@ export default function Home() {
   return (
     <div className="xl:container">
       <Header />
-      <main>
+      <main className="overflow-hidden">
         <Introduction />
         <AboutMe />
         <Projects />
         <Technologies />
         <Contact />
       </main>
-      <footer>
-        <Footer />
-      </footer>
+      <Footer />
     </div>
   );
 }
