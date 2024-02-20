@@ -35,7 +35,7 @@ export default function AboutMe() {
         >
           <div className="myPicture">
             <Image
-              src="/selfie.jpeg"
+              src="/selfie.JPEG"
               width={300}
               height={250}
               alt="Picture of the author"
