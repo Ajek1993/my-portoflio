@@ -28,7 +28,7 @@ export default function Technologies() {
         data-aos="fade-right"
       >
         <PortfolioIcon />
-        <p className="max-w-[350px] lg:max-w-[400px] text-center text-foreground lg:text-lg">
+        <p className="max-w-[350px] lg:max-w-[400px] text-center font-medium text-foreground lg:text-lg">
           Thank you for considering my profile! If you're looking for more
           information about my skills, feel free to check my CV below:
         </p>

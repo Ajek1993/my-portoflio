@@ -23,7 +23,10 @@ export default function Contact() {
           </Link>
         ))}
       </ul>
-      <p className="px-2 mx-auto sm:w-2/3 md:w:1/2 text-xs md:text-base text-foreground-500 leading-6 text-center">
+      <p
+        className="px-2 mx-auto sm:w-2/3 md:w:1/2 text-xs md:text-base text-foreground-500 leading-6 text-center"
+        data-aos="zoom-in"
+      >
         If you are interested in discussing potential opportunities,
         collaborating on exciting projects, or just want to say hello, I would
         love to hear from you!
