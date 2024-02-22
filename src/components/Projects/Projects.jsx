@@ -14,7 +14,10 @@ export default async function Projects() {
             key={project.link}
             data-aos={id % 2 === 0 ? "fade-right" : "fade-left"}
           >
-            <p className="mb-4">{project.name}</p>
+            <p className="mb-2">{project.name}</p>
+            <p className="text-sm mb-4">
+              Technologies: {project.technologies.join(", ")}
+            </p>
             <Link href={project.link}>
               <Image
                 src={project.src}
