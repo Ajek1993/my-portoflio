@@ -33,7 +33,7 @@ export default function Introduction() {
         data-aos="fade-up"
         className="sm:w-2/3 md:w:1/2 text-xs md:text-base text-foreground-500 leading-6"
       >
-        Right now I am looking for my first job. I like learing and trying new
+        Right now I am looking for my first job. I like learning and trying new
         things. In this moment I'm focused on React skills. Simultaneously I'm
         getting know Node.js. In the near future my goal is to understand
         Typescript and JEST.
