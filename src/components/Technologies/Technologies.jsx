@@ -33,12 +33,12 @@ export default function Technologies() {
           information about my skills, feel free to check my CV below:
         </p>
         <div className="flex flex-wrap justify-center gap-4 mt-8">
-          <Link href={"./Arkadiusz.Sarach_CV.pdf"}>
+          <Link href={"./Arkadiusz.Sarach_CV_PL_public.pdf"}>
             <Button radius="full" color="primary" variant="shadow" size="lg">
               Curriculum Vitae PL
             </Button>
           </Link>
-          <Link href={"./Arkadiusz.Sarach_CV_ENG.pdf"}>
+          <Link href={"./Arkadiusz.Sarach_CV_ENG_public.pdf"}>
             <Button
               radius="full"
               color="primary"
