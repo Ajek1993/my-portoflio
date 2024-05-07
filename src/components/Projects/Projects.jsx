@@ -20,6 +20,7 @@ export default async function Projects() {
             </p>
             <Link
               href={project.link}
+              target="_blank"
               className="flex items-start justify-center"
             >
               <Image
