@@ -15,16 +15,19 @@ export default async function Projects() {
             data-aos={id % 2 === 0 ? "fade-right" : "fade-left"}
           >
             <p className="mb-2">{project.name}</p>
-            <p className="text-sm mb-4">
+            <p className="text-sm font-normal mb-4">
               Technologies: {project.technologies.join(", ")}
             </p>
-            <Link href={project.link}>
+            <Link
+              href={project.link}
+              className="flex items-start justify-center"
+            >
               <Image
                 src={project.src}
-                width={1000}
-                height={1000}
+                width={450}
+                height={50}
                 alt={project.alt}
-                className="rounded-lg"
+                className="rounded-lg aspect-video"
               />
             </Link>
           </div>
