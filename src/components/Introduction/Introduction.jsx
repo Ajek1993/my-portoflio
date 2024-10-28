@@ -25,7 +25,7 @@ export default function Introduction() {
           data-aos-duration="3000"
           className="text-primary-200"
         >
-          Junior Frontend Develeper.
+          Junior Frontend Developer.
         </h2>
       </div>
 
