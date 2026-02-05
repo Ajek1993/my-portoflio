@@ -12,3 +12,5 @@ On this site you find more information about me 😄
 - Wielojęzyczność (PL/EN) z zapisem wyboru w localStorage
 - Responsywny design
 - Płynne animacje przy przewijaniu
+- Technologie pogrupowane w kategorie (Frontend, Backend, Narzędzia)
+- Profesjonalna narracja Software Developer

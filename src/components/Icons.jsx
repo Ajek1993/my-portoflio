@@ -325,19 +325,25 @@ export const PortfolioIcon = () => (
   </svg>
 );
 
-export const icons = [
-  { Icon: TypeScriptIcon(), name: "TypeScript" },
+export const frontendIcons = [
   { Icon: HtmlIcon(), name: "HTML" },
   { Icon: CSSIcon(), name: "CSS" },
   { Icon: SassIcon(), name: "SASS" },
   { Icon: TailwindCSSIcon(), name: "Tailwind CSS" },
   { Icon: JavascriptIcon(), name: "JavaScript" },
+  { Icon: TypeScriptIcon(), name: "TypeScript" },
   { Icon: ReactIcon(), name: "React" },
-  { Icon: NextIcon(), name: "Next" },
-  { Icon: NodeIcon(), name: "Node" },
+  { Icon: NextIcon(), name: "Next.js" },
+];
+
+export const backendIcons = [
+  { Icon: NodeIcon(), name: "Node.js" },
   { Icon: ExpressIcon(), name: "Express" },
+];
+
+export const toolIcons = [
   { Icon: GitIcon(), name: "Git" },
-  { Icon: GitHubIcon(), name: "Github" },
+  { Icon: GitHubIcon(), name: "GitHub" },
 ];
 
 export const contactIcons = [

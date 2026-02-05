@@ -8,20 +8,18 @@
   "intro": {
     "greeting": "Cześć, mam na imię",
     "name": "Arkadiusz Sarach.",
-    "role": "Junior Frontend Developer.",
-    "description": "Obecnie szukam swojej pierwszej pracy. Lubię uczyć się i próbować nowych rzeczy. W tym momencie skupiam się na umiejętnościach z zakresu React. Równocześnie poznaję Node.js. W najbliższej przyszłości moim celem jest zrozumienie Typescript i JEST."
+    "role": "Software Developer.",
+    "description": "Pasjonuję się programowaniem i tworzeniem rozwiązań, które łączą frontend i backend. Moją siłą jest umiejętność przekładania wyzwań biznesowych na elegancki, funkcjonalny kod. Ciągle się rozwijam, eksperymentuję z nowymi technologiami i szukam sposobów, by tworzyć aplikacje, które mają realny wpływ."
   },
   "about": {
     "title": "O mnie",
-    "text": "Jestem Arkadiusz, z wykształcenia górnik. Jednak ostatnie lata pracowałem w logistyce i transporcie. Zaczynałem jako zwykły kierowca, po 2 latach zacząłem pracować jako kierownik oddziału w firmie kurierskiej dla gastronomii.\n\nKomputery fascynują mnie od dziecka. Jako nastolatek miałem kontakt z systemem DOS. Czułem, że to może być środowisko dla mnie, ale wtedy życie potoczyło się inaczej.\n\nOd kiedy zacząłem się uczyć, doświadczam ogromnej satysfakcji z odkrywania nowych możliwości oferowanych przez najnowsze biblioteki i frameworki. To dodatkowa motywacja dla mnie do doskonalenia się w tej dziedzinie."
+    "text": "Moja ścieżka do programowania była nietypowa. Z wykształcenia jestem górnikiem, ale ostatnie lata spędziłem w logistyce i transporcie — od kierowcy po stanowisko kierownika oddziału w firmie kurierskiej. W trakcie tej pracy nauczyłem się organizacji, zarządzania czasem i podejmowania decyzji pod presją.\n\nKomputery fascynowały mnie od dziecka. Jako nastolatek eksperymentowałem z systemem DOS, ale życie potoczyło się inaczej. Gdy wreszcie wróciłem do programowania, odkryłem, że to właśnie to chcę robić — przekładać problemy biznesowe na kod, który działa.\n\nOd tamtej pory regularnie poszerzam swoje umiejętności w zakresie frontendu, backendu i narzędzi deweloperskich. Cenię sobie czysty kod, dobre praktyki i ciągłe uczenie się nowych technologii."
   },
   "tech": {
-    "title": "Technologie"
-  },
-  "cv": {
-    "text": "Dziękuję za zainteresowanie moim profilem! Jeśli szukasz więcej informacji o moich umiejętnościach, zapraszam do zapoznania się z moim CV poniżej:",
-    "buttonPL": "Curriculum Vitae PL",
-    "buttonEN": "Curriculum Vitae ENG"
+    "title": "Technologie",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "tools": "Narzędzia"
   },
   "projects": {
     "title": "Projekty",
