@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { projects } from "./projectData";
 
-export default async function Projects() {
+export default function Projects() {
   return (
     <section id="projects">
       <Heading title="Projects" />

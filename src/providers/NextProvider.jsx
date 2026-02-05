@@ -1,6 +1,6 @@
 "use client";
 
-import { NextUIProvider } from "@nextui-org/react";
+import { HeroUIProvider } from "@heroui/react";
 
 import Aos from "aos"; //Library for Animations
 import "aos/dist/aos.css";
@@ -11,5 +11,5 @@ export default function NextProvider({ children }) {
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
-  return <NextUIProvider>{children}</NextUIProvider>;
+  return <HeroUIProvider>{children}</HeroUIProvider>;
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "@nextui-org/react";
+import { Button } from "@heroui/react";
 import Heading from "../Heading/Heading";
 import { icons, PortfolioIcon } from "../Icons";
 import Link from "next/link";
@@ -44,7 +44,6 @@ export default function Technologies() {
               color="primary"
               variant="shadow"
               size="lg"
-              onCl
             >
               Curriculum Vitae ENG
             </Button>

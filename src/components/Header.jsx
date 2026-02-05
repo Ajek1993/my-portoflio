@@ -11,7 +11,7 @@ import {
   NavbarMenuItem,
   NavbarItem,
   Link,
-} from "@nextui-org/react";
+} from "@heroui/react";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
