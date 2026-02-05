@@ -7,23 +7,23 @@ export default function Footer() {
   const { t } = useLanguage();
 
   return (
-    <footer className="py-12 md:py-28 mx-auto text-center text-lg md:text-xl overflow-hidden">
+    <footer className="py-12 md:py-20 mx-auto text-center text-sm md:text-base section-alt border-t border-border">
       <div className="mb-4">
         <Link
           href="/cookies"
-          className="text-primary hover:underline mx-3 transition-all"
+          className="text-primary hover-link hover:underline mx-3"
         >
           {t("footer.cookies")}
         </Link>
-        <span className="text-gray-500">|</span>
+        <span className="text-text-secondary">|</span>
         <Link
           href="/privacy"
-          className="text-primary hover:underline mx-3 transition-all"
+          className="text-primary hover-link hover:underline mx-3"
         >
           {t("footer.privacy")}
         </Link>
       </div>
-      <div>
+      <div className="text-text-secondary">
         <span className="text-primary">&copy;</span> 2026 {t("footer.createdBy")}
       </div>
     </footer>

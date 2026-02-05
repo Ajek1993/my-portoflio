@@ -14,7 +14,7 @@ export default function Introduction() {
       <p
         data-aos="fade-in"
         data-aos-duration="1000"
-        className="font-bold text-sm md:text-base"
+        className="font-bold text-sm md:text-base text-text-secondary"
       >
         {t("intro.greeting")}
       </p>
@@ -23,7 +23,7 @@ export default function Introduction() {
           <span
             data-aos="fade-in"
             data-aos-duration="2000"
-            className="text-primary font-extrabold tracking-wide "
+            className="text-primary font-extrabold tracking-wide bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent"
           >
             {t("intro.name")}
           </span>
@@ -31,7 +31,7 @@ export default function Introduction() {
         <h2
           data-aos="fade-in"
           data-aos-duration="3000"
-          className="text-primary-200"
+          className="text-primary-light"
         >
           {t("intro.role")}
         </h2>
@@ -39,7 +39,7 @@ export default function Introduction() {
 
       <p
         data-aos="fade-up"
-        className="sm:w-2/3 md:w:1/2 text-xs md:text-base text-foreground-500 leading-6"
+        className="sm:w-2/3 md:w-1/2 text-xs md:text-base text-text-secondary leading-6"
       >
         {t("intro.description")}
       </p>

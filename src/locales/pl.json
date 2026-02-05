@@ -23,7 +23,8 @@
   },
   "projects": {
     "title": "Projekty",
-    "techLabel": "Technologie:"
+    "techLabel": "Technologie:",
+    "viewProject": "Zobacz projekt"
   },
   "contact": {
     "title": "Kontakt",
@@ -35,13 +36,69 @@
     "privacy": "Polityka prywatności"
   },
   "cookies": {
-    "title": "Polityka cookies",
-    "placeholder": "Ta sekcja wymaga uzupełnienia",
-    "backLink": "← Powrót"
+    "title": "Polityka Cookies",
+    "backLink": "← Powrót do strony głównej",
+    "intro": "Niniejsza Polityka Cookies określa zasady przechowywania i uzyskiwania dostępu do informacji na urządzeniach Użytkowników za pomocą plików Cookies w celu świadczenia usług drogą elektroniczną przez Administratora.",
+    "sections": [
+      {
+        "heading": "1. Definicje",
+        "content": "Administrator – oznacza Arkadiusz Sarach, prowadzący działalność pod adresem email: arkadiusz.sarach@gmail.com\n\nStrona – oznacza stronę internetową działającą pod adresem: [adres strony]\n\nUżytkownik – oznacza każdą osobę fizyczną prawną lub jednostkę organizacyjną, która korzysta z Usług.\n\nCookies – oznacza dane informatyczne, w szczególności małe pliki tekstowe, zapisywane i przechowywane na urządzeniach za pośrednictwem których Użytkownik korzysta ze Strony."
+      },
+      {
+        "heading": "2. Rodzaje Cookies",
+        "content": "Stosowane przez Administratora Cookies są bezpieczne dla urządzeń Użytkowników. W szczególności nie powodują one zmian w konfiguracji urządzeń końcowych Użytkowników ani w oprogramowaniu zainstalowanym na tych urządzeniach.\n\nNa Stronie wykorzystujemy następujące rodzaje Cookies:\n\na) Cookies niezbędne – niezbędne do prawidłowego funkcjonowania Strony, np. umożliwiające logowanie się do Strony.\n\nb) Cookies wydajnościowe – umożliwiają analizę sposobu korzystania ze Strony przez Użytkowników.\n\nc) Cookies funkcjonalne – umożliwiają zapamiętanie wybranych przez Użytkownika ustawień."
+      },
+      {
+        "heading": "3. Cele wykorzystania Cookies",
+        "content": "Administrator wykorzystuje Cookies w następujących celach:\n\n– tworzenia statystyk, które pomagają zrozumieć, w jaki sposób Użytkownicy korzystają ze Strony,\n\n– zapamiętywania preferencji Użytkowników,\n\n– zapewnienia bezpieczeństwa i wydajności Strony."
+      },
+      {
+        "heading": "4. Zarządzanie Cookies",
+        "content": "Użytkownik może w każdej chwili dokonać zmiany ustawień swojej przeglądarki internetowej w taki sposób, aby zablokować obsługę Cookies lub informować o ich każdorazowym umieszczeniu w urządzeniu Użytkownika.\n\nNależy jednak pamiętać, że wyłączenie lub ograniczenie obsługi Cookies może wpłynąć na funkcjonalność Strony."
+      },
+      {
+        "heading": "5. Kontakt",
+        "content": "W sprawach dotyczących Polityki Cookies proszony jest o kontakt z Administratorem pod adresem email: arkadiusz.sarach@gmail.com"
+      }
+    ]
   },
   "privacy": {
-    "title": "Polityka prywatności",
-    "placeholder": "Ta sekcja wymaga uzupełnienia",
-    "backLink": "← Powrót"
+    "title": "Polityka Prywatności",
+    "backLink": "← Powrót do strony głównej",
+    "intro": "Niniejsza Polityka Prywatności określa zasady przetwarzania danych osobowych Użytkowników korzystających ze Strony oraz chroni prywatność osób odwiedzających Stronę.",
+    "sections": [
+      {
+        "heading": "1. Administrator danych",
+        "content": "Administratorem Twoich danych osobowych jest Arkadiusz Sarach, prowadzący działalność pod adresem email: arkadiusz.sarach@gmail.com"
+      },
+      {
+        "heading": "2. Cel przetwarzania danych",
+        "content": "Administrator przetwarza Twoje dane osobowe w następujących celach:\n\n– komunikacja za pośrednictwem formularza kontaktowego,\n\n– prezentowanie portfolio usług,\n\n– statystyki odwiedzin Strony."
+      },
+      {
+        "heading": "3. Rodzaje przetwarzanych danych",
+        "content": "Administrator może przetwarzać następujące dane osobowe:\n\n– adres email (podany dobrowolnie w formularzu kontaktowym),\n\n– dane techniczne (adres IP, typ przeglądarki, system operacyjny),\n\n– dane o aktywności na Stronie."
+      },
+      {
+        "heading": "4. Podstawa prawna",
+        "content": "Podstawą prawną przetwarzania danych osobowych jest:\n\n– art. 6 ust. 1 lit. a) RODO – zgoda Użytkownika,\n\n– art. 6 ust. 1 lit. f) RODO – prawnie uzasadniony interes Administratora."
+      },
+      {
+        "heading": "5. Okres przechowywania danych",
+        "content": "Dane osobowe Użytkowników będą przechowywane przez okres niezbędny do realizacji celów, dla których zostały zebrane, nie dłużej jednak niż przez okres przewidziany przepisami prawa."
+      },
+      {
+        "heading": "6. Prawa Użytkownika",
+        "content": "Przysługują Ci następujące prawa:\n\n– prawo dostępu do Twoich danych osobowych,\n\n– prawo do sprostowania Twoich danych,\n\n– prawo do żądania usunięcia danych,\n\n– prawo do ograniczenia przetwarzania,\n\n– prawo do wniesienia sprzeciwu,\n\n– prawo do przenoszenia danych.\n\nAby skorzystać z powyższych praw, skontaktuj się z Administratorem."
+      },
+      {
+        "heading": "7. Przekazywanie danych poza EOG",
+        "content": "Twoje dane osobowe nie będą przekazywane do państw trzecich (poza Europejski Obszar Gospodarczy)."
+      },
+      {
+        "heading": "8. Kontakt",
+        "content": "W sprawach dotyczących ochrony danych osobowych proszony jest o kontakt z Administratorem pod adresem email: arkadiusz.sarach@gmail.com"
+      }
+    ]
   }
 }

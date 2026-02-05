@@ -13,6 +13,21 @@ module.exports = {
       center: true,
     },
     extend: {
+      colors: {
+        primary: {
+          blue: "#0070f0",
+          light: "#3b8ff0",
+          dark: "#0058c4",
+        },
+        text: {
+          main: "#1a1a2e",
+          secondary: "#64748b",
+        },
+        border: "#e2e8f0",
+        bg: {
+          alt: "#edf2ff",
+        },
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

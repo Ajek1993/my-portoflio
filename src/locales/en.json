@@ -23,7 +23,8 @@
   },
   "projects": {
     "title": "Projects",
-    "techLabel": "Technologies:"
+    "techLabel": "Technologies:",
+    "viewProject": "View Project"
   },
   "contact": {
     "title": "Contact",
@@ -36,12 +37,68 @@
   },
   "cookies": {
     "title": "Cookie Policy",
-    "placeholder": "This section needs to be filled in",
-    "backLink": "← Back"
+    "backLink": "← Back to home page",
+    "intro": "This Cookie Policy specifies the rules for storing and accessing information on Users' devices via Cookies in order to provide services electronically by the Administrator.",
+    "sections": [
+      {
+        "heading": "1. Definitions",
+        "content": "Administrator – means Arkadiusz Sarach, conducting business at email: arkadiusz.sarach@gmail.com\n\nWebsite – means the website operating at: [website address]\n\nUser – means any natural or legal person or organizational unit using the Services.\n\nCookies – means IT data, in particular small text files, stored and saved on devices through which Users use the Website."
+      },
+      {
+        "heading": "2. Types of Cookies",
+        "content": "The Cookies used by the Administrator are safe for Users' devices. In particular, they do not cause changes in the configuration of Users' end devices or in the software installed on these devices.\n\nThe Website uses the following types of Cookies:\n\na) Essential Cookies – necessary for the proper functioning of the Website, e.g., enabling login to the Website.\n\nb) Performance Cookies – enable analysis of how Users use the Website.\n\nc) Functional Cookies – enable remembering settings selected by Users."
+      },
+      {
+        "heading": "3. Purposes of using Cookies",
+        "content": "The Administrator uses Cookies for the following purposes:\n\n– creating statistics that help understand how Users use the Website,\n\n– remembering User preferences,\n\n– ensuring Website security and performance."
+      },
+      {
+        "heading": "4. Cookies Management",
+        "content": "The User may at any time change the settings of their internet browser to block Cookies or inform about each placement of Cookies on the User's device.\n\nHowever, please remember that disabling or limiting Cookies may affect the functionality of the Website."
+      },
+      {
+        "heading": "5. Contact",
+        "content": "For matters related to the Cookie Policy, please contact the Administrator at email: arkadiusz.sarach@gmail.com"
+      }
+    ]
   },
   "privacy": {
     "title": "Privacy Policy",
-    "placeholder": "This section needs to be filled in",
-    "backLink": "← Back"
+    "backLink": "← Back to home page",
+    "intro": "This Privacy Policy specifies the rules for processing personal data of Users using the Website and protects the privacy of persons visiting the Website.",
+    "sections": [
+      {
+        "heading": "1. Data Controller",
+        "content": "The controller of your personal data is Arkadiusz Sarach, conducting business at email: arkadiusz.sarach@gmail.com"
+      },
+      {
+        "heading": "2. Purpose of data processing",
+        "content": "The Administrator processes your personal data for the following purposes:\n\n– communication via the contact form,\n\n– presentation of service portfolio,\n\n– Website visit statistics."
+      },
+      {
+        "heading": "3. Types of processed data",
+        "content": "The Administrator may process the following personal data:\n\n– email address (provided voluntarily in the contact form),\n\n– technical data (IP address, browser type, operating system),\n\n– activity data on the Website."
+      },
+      {
+        "heading": "4. Legal basis",
+        "content": "The legal basis for processing personal data is:\n\n– Art. 6(1)(a) GDPR – User consent,\n\n– Art. 6(1)(f) GDPR – legitimate interest of the Administrator."
+      },
+      {
+        "heading": "5. Data retention period",
+        "content": "Users' personal data will be stored for the period necessary to achieve the purposes for which they were collected, but not longer than provided by law."
+      },
+      {
+        "heading": "6. User Rights",
+        "content": "You have the following rights:\n\n– right to access your personal data,\n\n– right to rectify your data,\n\n– right to request data deletion,\n\n– right to restrict processing,\n\n– right to object,\n\n– right to data portability.\n\nTo exercise the above rights, please contact the Administrator."
+      },
+      {
+        "heading": "7. Data transfer outside EEA",
+        "content": "Your personal data will not be transferred to third countries (outside the European Economic Area)."
+      },
+      {
+        "heading": "8. Contact",
+        "content": "For matters related to personal data protection, please contact the Administrator at email: arkadiusz.sarach@gmail.com"
+      }
+    ]
   }
 }

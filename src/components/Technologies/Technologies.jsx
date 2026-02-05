@@ -17,7 +17,7 @@ export default function Technologies() {
         {icons.map((icon) => (
           <li
             key={icon.name}
-            className="rounded-lg flex flex-col flex-nowrap items-center justify-center gap-5 w-[90px] min-h-[90px] p-4 sm:w-[110px] sm:min-h-[110px] sm:p-4 md:w-[125px] md:min-h-[125px] md:p-5 lg:w-[140px] lg:min-h-[140px] lg:p-6 text-primary text-center font-bold border-2 border-solid border-primary"
+            className="hover-card rounded-lg flex flex-col flex-nowrap items-center justify-center gap-5 w-[90px] min-h-[90px] p-4 sm:w-[110px] sm:min-h-[110px] sm:p-4 md:w-[125px] md:min-h-[125px] md:p-5 lg:w-[140px] lg:min-h-[140px] lg:p-6 text-primary text-center font-bold border-2 border-solid border-primary bg-white transition-all duration-300 hover:shadow-md hover:border-primary-light hover:-translate-y-1"
           >
             {icon.Icon}
             <p className="lg:text-lg">{icon.name}</p>
