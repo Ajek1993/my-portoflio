@@ -7,3 +7,8 @@ On this site you find more information about me 😄
 - HeroUI 2.6.8
 - Tailwind CSS 3
 - AOS (animations)
+
+## Features
+- Wielojęzyczność (PL/EN) z zapisem wyboru w localStorage
+- Responsywny design
+- Płynne animacje przy przewijaniu

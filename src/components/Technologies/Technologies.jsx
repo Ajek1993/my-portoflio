@@ -1,13 +1,18 @@
+"use client";
+
 import React from "react";
 import { Button } from "@heroui/react";
 import Heading from "../Heading/Heading";
 import { icons, PortfolioIcon } from "../Icons";
+import { useLanguage } from "@/context/LanguageContext";
 import Link from "next/link";
 
 export default function Technologies() {
+  const { t } = useLanguage();
+
   return (
     <section className="mx-auto mb-28 md:mb-48 max-w-screen-lg px-4">
-      <Heading title="Technologies" />
+      <Heading title={t("tech.title")} />
       <ul className="technologies mb-20 md:mb-32 grid justify-items-center items-stretch justify-center grid-cols-[repeat(auto-fit,minmax(90px,90px))] gap-7 sm:grid-cols-[repeat(auto-fit,minmax(110px,110px))] sm:gap-8 md:grid-cols-[repeat(auto-fit,minmax(125px,125px))] lg:grid-cols-[repeat(auto-fit,minmax(140px,140px))]">
         {icons.map((icon, id) => {
           return (
@@ -29,13 +34,12 @@ export default function Technologies() {
       >
         <PortfolioIcon />
         <p className="max-w-[350px] lg:max-w-[400px] text-center font-medium text-foreground lg:text-lg">
-          Thank you for considering my profile! If you're looking for more
-          information about my skills, feel free to check my CV below:
+          {t("cv.text")}
         </p>
         <div className="flex flex-wrap justify-center gap-4 mt-8">
           <Link href={"./Arkadiusz.Sarach_CV_PL_public.pdf"}>
             <Button radius="full" color="primary" variant="shadow" size="lg">
-              Curriculum Vitae PL
+              {t("cv.buttonPL")}
             </Button>
           </Link>
           <Link href={"./Arkadiusz.Sarach_CV_ENG_public.pdf"}>
@@ -45,7 +49,7 @@ export default function Technologies() {
               variant="shadow"
               size="lg"
             >
-              Curriculum Vitae ENG
+              {t("cv.buttonEN")}
             </Button>
           </Link>
         </div>

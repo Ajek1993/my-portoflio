@@ -1,0 +1,37 @@
+{
+  "header": {
+    "home": "Start",
+    "aboutme": "O mnie",
+    "projects": "Projekty",
+    "contact": "Kontakt"
+  },
+  "intro": {
+    "greeting": "Cześć, mam na imię",
+    "name": "Arkadiusz Sarach.",
+    "role": "Junior Frontend Developer.",
+    "description": "Obecnie szukam swojej pierwszej pracy. Lubię uczyć się i próbować nowych rzeczy. W tym momencie skupiam się na umiejętnościach z zakresu React. Równocześnie poznaję Node.js. W najbliższej przyszłości moim celem jest zrozumienie Typescript i JEST."
+  },
+  "about": {
+    "title": "O mnie",
+    "text": "Jestem Arkadiusz, z wykształcenia górnik. Jednak ostatnie lata pracowałem w logistyce i transporcie. Zaczynałem jako zwykły kierowca, po 2 latach zacząłem pracować jako kierownik oddziału w firmie kurierskiej dla gastronomii.\n\nKomputery fascynują mnie od dziecka. Jako nastolatek miałem kontakt z systemem DOS. Czułem, że to może być środowisko dla mnie, ale wtedy życie potoczyło się inaczej.\n\nOd kiedy zacząłem się uczyć, doświadczam ogromnej satysfakcji z odkrywania nowych możliwości oferowanych przez najnowsze biblioteki i frameworki. To dodatkowa motywacja dla mnie do doskonalenia się w tej dziedzinie."
+  },
+  "tech": {
+    "title": "Technologie"
+  },
+  "cv": {
+    "text": "Dziękuję za zainteresowanie moim profilem! Jeśli szukasz więcej informacji o moich umiejętnościach, zapraszam do zapoznania się z moim CV poniżej:",
+    "buttonPL": "Curriculum Vitae PL",
+    "buttonEN": "Curriculum Vitae ENG"
+  },
+  "projects": {
+    "title": "Projekty",
+    "techLabel": "Technologie:"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "text": "Jeśli jesteś zainteresowany omówieniem potencjalnych możliwości współpracy, chcesz porozmawiać o ekscytujących projektach, lub po prostu chcesz się przywitać, chętnie od Ciebie usłyszę!"
+  },
+  "footer": {
+    "createdBy": "Stworzone przez Arkadiusza Saracha"
+  }
+}

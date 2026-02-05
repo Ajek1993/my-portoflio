@@ -1,6 +1,7 @@
 import { Kanit } from "next/font/google";
 import "./globals.css";
 import NextProvider from "@/providers/NextProvider";
+import { LanguageProvider } from "@/context/LanguageContext";
 
 const kanit = Kanit({ weight: "400", subsets: ["latin"] });
 
@@ -13,7 +14,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
       <body className={kanit.className}>
-        <NextProvider>{children}</NextProvider>
+        <LanguageProvider>
+          <NextProvider>{children}</NextProvider>
+        </LanguageProvider>
       </body>
     </html>
   );
