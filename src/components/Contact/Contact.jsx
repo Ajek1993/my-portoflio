@@ -14,7 +14,7 @@ export default function Contact() {
       <Heading title={t("contact.title")} />
       <ul
         className="text-center py-20 flex justify-center gap-4"
-        data-aos="zoom-in"
+        data-aos="fade-up"
       >
         {contactIcons.map((contactIcon) => (
           <Link
@@ -30,7 +30,7 @@ export default function Contact() {
       </ul>
       <p
         className="px-6 py-10 mx-auto sm:w-2/3 md:w:1/2 text-xs md:text-base text-foreground-500 leading-6 text-center"
-        data-aos="zoom-in"
+        data-aos="fade-up"
       >
         {t("contact.text")}
       </p>

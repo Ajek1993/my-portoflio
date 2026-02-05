@@ -5,7 +5,7 @@ export default function Heading({ title }) {
   return (
     <h2
       className="section__header text-5xl font-bold text-center my-14 relative"
-      data-aos="flip-left"
+      data-aos="fade-up"
     >
       {title}
     </h2>

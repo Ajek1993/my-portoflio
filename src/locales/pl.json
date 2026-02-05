@@ -30,6 +30,18 @@
     "text": "Jeśli jesteś zainteresowany omówieniem potencjalnych możliwości współpracy, chcesz porozmawiać o ekscytujących projektach, lub po prostu chcesz się przywitać, chętnie od Ciebie usłyszę!"
   },
   "footer": {
-    "createdBy": "Stworzone przez Arkadiusza Saracha"
+    "createdBy": "Stworzone przez Arkadiusza Saracha",
+    "cookies": "Polityka cookies",
+    "privacy": "Polityka prywatności"
+  },
+  "cookies": {
+    "title": "Polityka cookies",
+    "placeholder": "Ta sekcja wymaga uzupełnienia",
+    "backLink": "← Powrót"
+  },
+  "privacy": {
+    "title": "Polityka prywatności",
+    "placeholder": "Ta sekcja wymaga uzupełnienia",
+    "backLink": "← Powrót"
   }
 }

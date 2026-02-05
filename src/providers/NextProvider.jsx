@@ -9,7 +9,7 @@ import { useEffect } from "react";
 
 export default function NextProvider({ children }) {
   useEffect(() => {
-    Aos.init({ duration: 1000 });
+    Aos.init({ duration: 600, once: true });
   }, []);
   return <HeroUIProvider>{children}</HeroUIProvider>;
 }

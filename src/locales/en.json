@@ -30,6 +30,18 @@
     "text": "If you are interested in discussing potential opportunities, collaborating on exciting projects, or just want to say hello, I would love to hear from you!"
   },
   "footer": {
-    "createdBy": "Created by Arkadiusz Sarach"
+    "createdBy": "Created by Arkadiusz Sarach",
+    "cookies": "Cookie Policy",
+    "privacy": "Privacy Policy"
+  },
+  "cookies": {
+    "title": "Cookie Policy",
+    "placeholder": "This section needs to be filled in",
+    "backLink": "← Back"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "placeholder": "This section needs to be filled in",
+    "backLink": "← Back"
   }
 }

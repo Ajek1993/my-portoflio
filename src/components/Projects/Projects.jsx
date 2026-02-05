@@ -17,7 +17,7 @@ export default function Projects() {
         {projects.map((project, id) => (
           <div
             key={project.link}
-            data-aos={id % 2 === 0 ? "fade-right" : "fade-left"}
+            data-aos="fade-up"
           >
             <p className="mb-2">{project.name}</p>
             <p className="text-sm font-normal mb-4">

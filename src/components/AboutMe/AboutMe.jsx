@@ -15,15 +15,13 @@ export default function AboutMe() {
       <div className="lg:flex md:gap-x-12 lg:gap-x-24 px-4 md:px-6">
         <p
           className="text-left font-medium first-letter:w-full lg:w-2/3 leading-8 whitespace-pre-line"
-          data-aos="fade-up-right"
-          data-aos-duration="1000"
+          data-aos="fade-up"
         >
           {t("about.text")}
         </p>
         <div
           className="flex justify-center items-center my-8"
-          data-aos="fade-up-left"
-          data-aos-duration="1000"
+          data-aos="fade-up"
         >
           <div className="myPicture">
             <Image
