@@ -16,7 +16,7 @@ export default function Projects() {
     <section id="projects" className="section-alt py-12 md:py-20">
       <div className="xl:container mx-auto">
       <Heading title={t("projects.title")} />
-      <ul className="mb-10 md:mb-16 grid justify-items-center items-stretch justify-center grid-cols-[repeat(auto-fit,minmax(320px,380px))] gap-6 sm:gap-8 px-4 sm:px-8">
+      <ul className="mb-10 md:mb-16 grid justify-items-center items-stretch justify-center grid-cols-[repeat(auto-fit,minmax(320px,380px))] gap-6 sm:gap-8 px-4 md:px-6 lg:px-8">
         {projects.map((project) => (
           <li
             key={project.link}

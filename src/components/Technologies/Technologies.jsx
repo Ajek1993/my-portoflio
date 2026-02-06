@@ -29,7 +29,7 @@ export default function Technologies() {
 
   return (
     <section className="py-12 md:py-20">
-      <div className="mx-auto mb-16 md:mb-24 max-w-screen-lg px-4">
+      <div className="xl:container mx-auto mb-16 md:mb-24 px-4 md:px-6 lg:px-8">
         <Heading title={t("tech.title")} />
         {renderIconGroup(frontendIcons, "tech.frontend")}
         {renderIconGroup(backendIcons, "tech.backend")}
