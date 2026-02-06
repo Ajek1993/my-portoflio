@@ -36,6 +36,10 @@
     "privacy": "Polityka prywatności"
   },
   "cookies": {
+    "banner": "Używamy plików cookies, aby poprawić Twoje doświadczenia.",
+    "learnMore": "Dowiedz się więcej",
+    "accept": "Akceptuję",
+    "decline": "Odrzuć",
     "title": "Polityka Cookies",
     "backLink": "← Powrót do strony głównej",
     "intro": "Niniejsza Polityka Cookies określa zasady przechowywania i uzyskiwania dostępu do informacji na urządzeniach Użytkowników za pomocą plików Cookies w celu świadczenia usług drogą elektroniczną przez Administratora.",

@@ -2,6 +2,7 @@ import { Kanit } from "next/font/google";
 import "./globals.css";
 import NextProvider from "@/providers/NextProvider";
 import { LanguageProvider } from "@/context/LanguageContext";
+import CookieConsent from "@/components/CookieConsent";
 
 const kanit = Kanit({ weight: "400", subsets: ["latin"] });
 
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
       <body className={kanit.className}>
         <LanguageProvider>
           <NextProvider>{children}</NextProvider>
+          <CookieConsent />
         </LanguageProvider>
       </body>
     </html>

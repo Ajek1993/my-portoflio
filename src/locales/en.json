@@ -36,6 +36,10 @@
     "privacy": "Privacy Policy"
   },
   "cookies": {
+    "banner": "We use cookies to enhance your browsing experience.",
+    "learnMore": "Learn more",
+    "accept": "Accept",
+    "decline": "Decline",
     "title": "Cookie Policy",
     "backLink": "← Back to home page",
     "intro": "This Cookie Policy specifies the rules for storing and accessing information on Users' devices via Cookies in order to provide services electronically by the Administrator.",
