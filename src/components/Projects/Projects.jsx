@@ -13,9 +13,10 @@ export default function Projects() {
   const { t } = useLanguage();
 
   return (
-    <section id="projects" className="section-alt py-20 md:py-32">
+    <section id="projects" className="section-alt py-12 md:py-20">
+      <div className="xl:container mx-auto">
       <Heading title={t("projects.title")} />
-      <ul className="mb-10 md:mb-20 grid justify-items-center items-stretch justify-center grid-cols-[repeat(auto-fit,minmax(320px,380px))] gap-6 sm:gap-8 px-4 sm:px-8">
+      <ul className="mb-10 md:mb-16 grid justify-items-center items-stretch justify-center grid-cols-[repeat(auto-fit,minmax(320px,380px))] gap-6 sm:gap-8 px-4 sm:px-8">
         {projects.map((project) => (
           <li
             key={project.link}
@@ -23,7 +24,7 @@ export default function Projects() {
             className="w-full"
           >
             <Card
-              className="hover-card border border-border rounded-2xl overflow-hidden bg-white"
+              className="hover-card border border-border rounded-2xl overflow-hidden bg-bg-card"
               isPressable
               as={Link}
               href={project.link}
@@ -62,7 +63,7 @@ export default function Projects() {
                       key={tech}
                       size="sm"
                       variant="flat"
-                      className="text-xs bg-primary-100 text-primary-dark"
+                      className="text-xs bg-primary/20 text-primary-light"
                     >
                       {tech}
                     </Chip>
@@ -73,6 +74,7 @@ export default function Projects() {
           </li>
         ))}
       </ul>
+      </div>
     </section>
   );
 }

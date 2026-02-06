@@ -10,7 +10,7 @@ export default function AboutMe() {
   const { t } = useLanguage();
 
   return (
-    <section className="max-w-4xl mx-auto mb-40 py-20 section-alt" id="aboutme">
+    <section className="max-w-4xl mx-auto mb-16 py-12" id="aboutme">
       <Heading title={t("about.title")} />
       <div className="lg:flex md:gap-x-12 lg:gap-x-24 px-4 md:px-6">
         <p

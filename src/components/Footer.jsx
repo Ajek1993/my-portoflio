@@ -7,7 +7,7 @@ export default function Footer() {
   const { t } = useLanguage();
 
   return (
-    <footer className="py-12 md:py-20 mx-auto text-center text-sm md:text-base section-alt border-t border-border">
+    <footer className="py-8 md:py-12 mx-auto text-center text-sm md:text-base section-alt border-t border-border">
       <div className="mb-4">
         <Link
           href="/cookies"

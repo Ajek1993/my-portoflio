@@ -15,17 +15,19 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          blue: "#0070f0",
-          light: "#3b8ff0",
-          dark: "#0058c4",
+          DEFAULT: "#3b82f6",
+          blue: "#3b82f6",
+          light: "#60a5fa",
+          dark: "#2563eb",
         },
         text: {
-          main: "#1a1a2e",
-          secondary: "#64748b",
+          main: "#e2e8f0",
+          secondary: "#94a3b8",
         },
-        border: "#e2e8f0",
+        border: "#3d5068",
         bg: {
-          alt: "#edf2ff",
+          alt: "#1e293b",
+          card: "#2a3a50",
         },
       },
       backgroundImage: {

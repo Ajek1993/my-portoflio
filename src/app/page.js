@@ -10,16 +10,18 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="xl:container">
+    <>
       <Header />
       <main className="overflow-hidden">
-        <Introduction />
-        <AboutMe />
+        <div className="xl:container mx-auto">
+          <Introduction />
+          <AboutMe />
+        </div>
         <Projects />
         <Technologies />
         <Contact />
       </main>
       <Footer />
-    </div>
+    </>
   );
 }

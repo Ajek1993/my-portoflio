@@ -2,53 +2,8 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import {
-  Navbar,
-  NavbarBrand,
-  NavbarMenuToggle,
-  NavbarContent,
-  NavbarMenu,
-  NavbarMenuItem,
-  NavbarItem,
-  Link,
-  Button,
-} from "@heroui/react";
+import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
-
-// Hamburger icon SVG
-const HamburgerIcon = () => (
-  <svg
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-  >
-    <line x1="3" y1="6" x2="21" y2="6" />
-    <line x1="3" y1="12" x2="21" y2="12" />
-    <line x1="3" y1="18" x2="21" y2="18" />
-  </svg>
-);
-
-// Close icon SVG
-const CloseIcon = () => (
-  <svg
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-  >
-    <line x1="18" y1="6" x2="6" y2="18" />
-    <line x1="6" y1="6" x2="18" y2="18" />
-  </svg>
-);
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -62,34 +17,24 @@ export default function Header() {
   ];
 
   return (
-    <Navbar
-      isBordered
-      isMenuOpen={isMenuOpen}
-      onMenuOpenChange={setIsMenuOpen}
-      className="pt-4 bg-inherit border-solid border-b-2 border-primary sm:border-none"
-      position="static"
-    >
-      {/* Logo - lewa strona */}
-      <NavbarContent justify="start">
-        <NavbarBrand>
-          <Image src="/rocket-solid.svg" width={40} height={40} alt="Logo" />
-        </NavbarBrand>
-      </NavbarContent>
+    <header className="sticky top-0 z-50 border-b border-border bg-[#0f172a]/80 backdrop-blur-md">
+      <nav className="xl:container mx-auto flex items-center justify-between py-3 px-4 md:px-8">
+        {/* Logo */}
+        <Link href="/">
+          <Image src="/rocket-solid.svg" width={40} height={40} alt="Logo" className="invert" />
+        </Link>
 
-      {/* Linki nawigacyjne + język - prawa strona (desktop) */}
-      <NavbarContent className="hidden sm:flex gap-6" justify="end">
-        {menuItems.map((item) => (
-          <NavbarItem key={item.key}>
+        {/* Desktop nav */}
+        <div className="hidden sm:flex items-center gap-6">
+          {menuItems.map((item) => (
             <Link
-              className="hover:text-primary text-2xl hover-link"
-              color="foreground"
+              key={item.key}
+              className="hover:text-primary text-lg md:text-xl hover-link text-text-main"
               href={item.href}
             >
               {item.label}
             </Link>
-          </NavbarItem>
-        ))}
-        <NavbarItem>
+          ))}
           <div className="flex gap-2 items-center">
             <button
               onClick={() => changeLanguage("pl")}
@@ -113,26 +58,34 @@ export default function Header() {
               EN
             </button>
           </div>
-        </NavbarItem>
-      </NavbarContent>
+        </div>
 
-      {/* Menu mobilne */}
-      <NavbarMenu className="mt-4 bg-inherit">
-        {menuItems.map((item) => (
-          <NavbarMenuItem key={item.key}>
+        {/* Mobile hamburger */}
+        <button
+          className="sm:hidden flex flex-col justify-center items-center w-8 h-8 gap-[5px]"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label={isMenuOpen ? "Zamknij menu" : "Otwórz menu"}
+        >
+          <span className={`block h-[2px] w-5 bg-text-main transition-all duration-300 ${isMenuOpen ? "rotate-45 translate-y-[7px]" : ""}`} />
+          <span className={`block h-[2px] w-5 bg-text-main transition-all duration-300 ${isMenuOpen ? "opacity-0" : ""}`} />
+          <span className={`block h-[2px] w-5 bg-text-main transition-all duration-300 ${isMenuOpen ? "-rotate-45 -translate-y-[7px]" : ""}`} />
+        </button>
+      </nav>
+
+      {/* Mobile menu */}
+      {isMenuOpen && (
+        <div className="sm:hidden bg-[#0f172a]/95 backdrop-blur-md px-4 pb-6 pt-2 border-t border-border">
+          {menuItems.map((item) => (
             <Link
-              className="hover:text-primary w-full text-xl py-2 hover-link"
-              color="foreground"
+              key={item.key}
+              className="block hover:text-primary text-xl py-3 hover-link text-text-main"
               href={item.href}
-              size="lg"
               onClick={() => setIsMenuOpen(false)}
             >
               {item.label}
             </Link>
-          </NavbarMenuItem>
-        ))}
-        <NavbarMenuItem>
-          <div className="flex gap-4 pt-2">
+          ))}
+          <div className="flex gap-4 pt-3">
             <button
               onClick={() => changeLanguage("pl")}
               className={`px-3 py-1 text-sm font-bold hover-link ${
@@ -154,16 +107,8 @@ export default function Header() {
               EN
             </button>
           </div>
-        </NavbarMenuItem>
-      </NavbarMenu>
-
-      {/* Hamburger toggle - mobile */}
-      <NavbarMenuToggle
-        aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-        className="sm:hidden"
-      >
-        {isMenuOpen ? <CloseIcon /> : <HamburgerIcon />}
-      </NavbarMenuToggle>
-    </Navbar>
+        </div>
+      )}
+    </header>
   );
 }
