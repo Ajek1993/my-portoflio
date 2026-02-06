@@ -4,18 +4,19 @@ export function TypeScriptIcon() {
   return (
     <svg
       className="w-iconMobile sm:w-iconSmall md:w-iconMedium lg:w-iconLarge"
+      viewBox="0 0 256 256"
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 48 48"
     >
-      <rect width="36" height="36" x="6" y="6" fill="currentColor"></rect>
-      <polygon
-        className="fill-bg-card group-hover:fill-primary"
-        points="27.49,22 14.227,22 14.227,25.264 18.984,25.264 18.984,40 22.753,40 22.753,25.264 27.49,25.264"
-      ></polygon>
+      <title>TypeScript icon</title>
+      <polygon fill="currentColor" points="0 128 0 0 128 0 256 0 256 128 256 256 128 256 0 256" />
       <path
         className="fill-bg-card group-hover:fill-primary"
-        d="M39.194,26.084c0,0-1.787-1.192-3.807-1.192s-2.747,0.96-2.747,1.986 c0,2.648,7.381,2.383,7.381,7.712c0,8.209-11.254,4.568-11.254,4.568V35.22c0,0,2.152,1.622,4.733,1.622s2.483-1.688,2.483-1.92 c0-2.449-7.315-2.449-7.315-7.878c0-7.381,10.658-4.469,10.658-4.469L39.194,26.084z"
-      ></path>
+        d="M146.658,32.563 L146.739,43.047 L130.079,43.047 L113.419,43.047 L113.419,90.387 L113.419,137.726 L101.635,137.726 L89.851,137.726 L89.851,90.387 L89.851,43.047 L73.19,43.047 L56.53,43.047 L56.53,32.766 C56.53,27.077 56.652,22.323 56.814,22.201 C56.936,22.039 77.213,21.957 101.797,21.998 L146.536,22.12 L146.658,32.563 Z"
+      />
+      <path
+        className="fill-bg-card group-hover:fill-primary"
+        d="M206.567,21.728 C213.068,23.353 218.026,26.238 222.577,30.952 C224.934,33.471 228.428,38.063 228.713,39.16 C228.794,39.485 217.66,46.962 210.915,51.148 C210.671,51.31 209.696,50.254 208.598,48.628 C205.307,43.833 201.853,41.761 196.57,41.395 C188.809,40.867 183.811,44.93 183.852,51.716 C183.852,53.708 184.136,54.886 184.949,56.511 C186.656,60.047 189.825,62.16 199.781,66.467 C218.107,74.35 225.949,79.551 230.826,86.947 C236.271,95.196 237.49,108.362 233.792,118.155 C229.729,128.801 219.651,136.034 205.469,138.431 C201.081,139.203 190.678,139.082 185.965,138.228 C175.684,136.4 165.932,131.32 159.918,124.656 C157.561,122.055 152.969,115.269 153.254,114.782 C153.376,114.619 154.432,113.969 155.61,113.278 C156.748,112.628 161.056,110.149 165.119,107.793 L172.474,103.526 L174.018,105.802 C176.172,109.093 180.885,113.603 183.73,115.107 C191.897,119.414 203.113,118.805 208.639,113.847 C210.996,111.694 211.971,109.459 211.971,106.167 C211.971,103.201 211.605,101.901 210.061,99.666 C208.07,96.821 204.007,94.424 192.466,89.426 C179.26,83.737 173.571,80.202 168.37,74.594 C165.363,71.343 162.518,66.142 161.34,61.794 C160.365,58.177 160.121,49.116 160.893,45.459 C163.616,32.699 173.246,23.8 187.143,21.159 C191.654,20.306 202.137,20.631 206.567,21.728 Z"
+      />
     </svg>
   );
 }
@@ -337,17 +338,16 @@ export const ArrowUpRight = ({ className = "" }) => (
   </svg>
 );
 
-// Python Icon (Simple Icons)
+// Python Icon
 export const PythonIcon = () => (
   <svg
     className="w-iconMobile sm:w-iconSmall md:w-iconMedium lg:w-iconLarge"
-    role="img"
-    viewBox="0 0 24 24"
+    viewBox="0 0 20 20"
     xmlns="http://www.w3.org/2000/svg"
   >
     <title>Python</title>
     <path
-      d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.25-.32-.2-.32-.15-.34-.1-.35-.05-.36-.02-.37V8.5l.02-.4.05-.31.08-.27.11-.23.14-.2.16-.18.18-.16.19-.14.2-.12.21-.11.22-.09.22-.08.22-.07.22-.05.22-.04.21-.03.21-.02h5.39l.69-.05.59-.14.5-.22.41-.27.33-.32.27-.35.2-.36.15-.37.1-.35.07-.32.04-.27.02-.21V1.06h-.13l-.2-.01-.2-.02-.21-.02-.2-.03-.2-.03-.19-.03-.19-.04-.18-.04-.18-.05-.17-.05-.16-.06-.15-.06-.15-.07-.14-.07-.13-.08-.12-.08-.11-.09-.11-.09-.09-.1-.09-.1-.08-.11-.07-.11-.07-.12-.06-.12-.05-.13-.05-.13-.04-.13-.04-.14-.03-.14-.02-.15-.02-.15-.01-.15-.01-.16V.18zm2.25 3.95l.06.12.04.14.02.15v1.14l-.02.15-.04.14-.06.12-.07.11-.09.1-.1.08-.11.07-.12.05-.13.04-.13.02-.14.01h-1.14l-.14-.01-.13-.02-.12-.04-.11-.05-.1-.07-.09-.08-.07-.1-.06-.12-.04-.13-.02-.15V4.54l.02-.15.04-.14.06-.12.07-.11.09-.1.1-.08.11-.07.12-.05.13-.04.13-.02.14-.01h1.14l.14.01.13.02.12.04.11.05.1.07.09.08.07.1.06.12.04.13.02.15zm-8.75 9.88l-.06-.12-.04-.14-.02-.15v-1.14l.02-.15.04-.14.06-.12.07-.11.09-.1.1-.08.11-.07.12-.05.13-.04.13-.02.14-.01h1.14l.14.01.13.02.12.04.11.05.1.07.09.08.07.1.06.12.04.13.02.15v1.14l-.02.15-.04.14-.06.12-.07.11-.09.1-.1.08-.11.07-.12.05-.13.04-.13.02-.14.01H7.61l-.14-.01-.13-.02-.12-.04-.11-.05-.1-.07-.09-.08-.07-.1-.06-.12-.04-.13-.02-.15zM9.75 23.82l-.9-.2-.73-.26-.59-.3-.45-.32-.34-.34-.25-.34-.16-.33-.1-.3-.04-.26-.02-.2.01-.13V15.5l.05-.63.13-.55.21-.46.26-.38.3-.31.33-.25.35-.19.35-.14.33-.1.3-.07.26-.04.21-.02h5.47l.69-.05.59-.14.5-.22.41-.27.33-.32.27-.35.2-.36.15-.37.1-.35.07-.32.04-.27.02-.21v-3.06h2.09l.21.03.28.07.32.12.35.18.36.26.36.36.25.32.2.32.15.34.1.35.05.36.02.37v5.64l-.02.4-.05.31-.08.27-.11.23-.14.2-.16.18-.18.16-.19.14-.2.12-.21.11-.22.09-.22.08-.22.07-.22.05-.22.04-.21.03-.21.02h-5.39l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H9.75zm2.25-3.95l-.06-.12-.04-.14-.02-.15v-1.14l.02-.15.04-.14.06-.12.07-.11.09-.1.1-.08.11-.07.12-.05.13-.04.13-.02.14-.01h1.14l.14.01.13.02.12.04.11.05.1.07.09.08.07.1.06.12.04.13.02.15v1.14l-.02.15-.04.14-.06.12-.07.11-.09.1-.1.08-.11.07-.12.05-.13.04-.13.02-.14.01h-1.14l-.14-.01-.13-.02-.12-.04-.11-.05-.1-.07-.09-.08-.07-.1-.06-.12-.04-.13-.02-.15z"
+      d="M12.744,18.458 C12.262,18.458 11.872,18.066 11.872,17.581 C11.872,17.097 12.262,16.706 12.744,16.706 C13.226,16.706 13.616,17.097 13.616,17.581 C13.616,18.066 13.226,18.458 12.744,18.458 M10.072,20 C15.15,20 14.833,17.786 14.833,17.786 L14.827,15.494 L9.982,15.494 L9.982,14.805 L16.751,14.805 C16.751,14.805 20,15.176 20,10.026 C20,4.876 17.165,5.058 17.165,5.058 L15.472,5.058 L15.472,7.449 C15.472,7.449 15.563,10.299 12.682,10.299 L7.876,10.299 C7.876,10.299 5.176,10.255 5.176,12.922 L5.176,17.331 C5.176,17.331 4.766,20 10.072,20 M7.257,1.542 C7.739,1.542 8.128,1.934 8.128,2.419 C8.128,2.903 7.739,3.294 7.257,3.294 C6.775,3.294 6.385,2.903 6.385,2.419 C6.385,1.934 6.775,1.542 7.257,1.542 M9.928,0 C4.851,0 5.168,2.214 5.168,2.214 L5.174,4.506 L10.019,4.506 L10.019,5.195 L3.249,5.195 C3.249,5.195 0,4.824 0,9.974 C0,15.124 2.836,14.942 2.836,14.942 L4.528,14.942 L4.528,12.551 C4.528,12.551 4.437,9.701 7.319,9.701 L12.124,9.701 C12.124,9.701 14.824,9.745 14.824,7.078 L14.824,2.669 C14.824,2.669 15.234,0 9.928,0"
       fill="currentColor"
     />
   </svg>
@@ -431,31 +431,232 @@ export const ClaudeCodeIcon = () => (
   </svg>
 );
 
+// Webpack Icon
+export const WebpackIcon = () => (
+  <svg
+    className="w-iconMobile sm:w-iconSmall md:w-iconMedium lg:w-iconLarge"
+    viewBox="0 0 48 48"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      fill="currentColor"
+      d="M24 4L6 14v20l18 10 18-10V14L24 4zm14 30.5l-14 7.8-14-7.8V15.2l14-7.8 14 7.8v19.3z"
+    />
+    <path
+      fill="currentColor"
+      d="M24 10.5l-11 6.2v12.6l11 6.2 11-6.2V16.7l-11-6.2zm8 16.9l-8 4.5-8-4.5v-9l8-4.5 8 4.5v9z"
+    />
+  </svg>
+);
+
+// Bootstrap Icon
+export const BootstrapIcon = () => (
+  <svg
+    className="w-iconMobile sm:w-iconSmall md:w-iconMedium lg:w-iconLarge"
+    viewBox="0 0 48 48"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      fill="currentColor"
+      d="M8 6a2 2 0 0 0-2 2v32a2 2 0 0 0 2 2h32a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2H8zm8.5 9h9.2c4.3 0 6.8 2.1 6.8 5.4 0 2.3-1.5 4.1-3.8 4.6v.1c3 .4 4.8 2.3 4.8 5.2 0 3.8-2.8 6.2-7.4 6.2H16.5V15zm4.2 8.5h4.3c2.4 0 3.6-.9 3.6-2.7 0-1.7-1.2-2.6-3.5-2.6h-4.4v5.3zm0 8.8h4.9c2.5 0 3.8-1 3.8-2.9 0-1.8-1.3-2.8-3.9-2.8h-4.8v5.7z"
+    />
+  </svg>
+);
+
+// MongoDB Icon
+export const MongoDBIcon = () => (
+  <svg
+    className="w-iconMobile sm:w-iconSmall md:w-iconMedium lg:w-iconLarge"
+    viewBox="0 0 48 48"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      fill="currentColor"
+      d="M24 4c-1.5 3.5-3.5 6-6 9-3 3.5-5 8-5 13 0 9 5 16 11 18v-2c-4-2-7-6-7-12 0-5 2.5-9 5-12 1.5-2 3-4 4-7 1 3 2.5 5 4 7 2.5 3 5 7 5 12 0 6-3 10-7 12v2c6-2 11-9 11-18 0-5-2-9.5-5-13-2.5-3-4.5-5.5-6-9z"
+    />
+    <path
+      fill="currentColor"
+      d="M24 44v-4c0 0-1 0-1 1v3h2z"
+    />
+  </svg>
+);
+
+// Firebase Icon
+export const FirebaseIcon = () => (
+  <svg
+    className="w-iconMobile sm:w-iconSmall md:w-iconMedium lg:w-iconLarge"
+    viewBox="0 0 128 128"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <title>Firebase icon</title>
+    <path
+      fill="currentColor"
+      d="M27.35 80.52l10.68-68.44c.37-2.33 3.5-2.89 4.6-.8l11.48 21.48-26.76 47.76zm75.94 16.63L93.1 34.11c-.31-1.96-2.76-2.76-4.17-1.35L24.71 97.15l35.54 19.95c2.59 1.46 5.77 1.46 8.36 0l34.68-19.95zm-28.26-57L66.6 24.57c-.89-1.75-3.42-1.75-4.32 0L22.15 100.7l53.88-60.55z"
+    />
+  </svg>
+);
+
+// REST API Icon
+export const RestApiIcon = () => (
+  <svg
+    className="w-iconMobile sm:w-iconSmall md:w-iconMedium lg:w-iconLarge"
+    viewBox="0 0 48 48"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      fill="currentColor"
+      d="M8 12h32v4H8zM8 22h32v4H8zM8 32h32v4H8z"
+    />
+    <circle fill="currentColor" cx="12" cy="14" r="2"/>
+    <circle fill="currentColor" cx="12" cy="24" r="2"/>
+    <circle fill="currentColor" cx="12" cy="34" r="2"/>
+    <path
+      fill="currentColor"
+      d="M32 8l8 6-8 6V8zM16 28l-8 6 8 6V28z"
+    />
+  </svg>
+);
+
+// Django Icon
+export const DjangoIcon = () => (
+  <svg
+    className="w-iconMobile sm:w-iconSmall md:w-iconMedium lg:w-iconLarge"
+    viewBox="0 0 48 48"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      fill="currentColor"
+      d="M18 8h6v26c-3 .5-5.5.8-8 .8-7.5 0-11.5-3.4-11.5-9.8 0-6.2 4.3-10.2 11-10.2 1.2 0 2 .1 2.5.2V8zm0 12c-.7-.2-1.3-.3-2-.3-3.2 0-5 2-5 5.7 0 3.6 1.7 5.5 5 5.5.7 0 1.3 0 2-.1V20z"
+    />
+    <path
+      fill="currentColor"
+      d="M32 8h6v3.5h-6V8zM32 15h6v20c0 4-0.5 6-2 7.5-1.5 1.5-3.5 2-7 2-1 0-2 0-3-.2v-5c.7.1 1.2.2 2 .2 2 0 3-1 3-3.8V15z"
+    />
+  </svg>
+);
+
+// npm Icon
+export const NpmIcon = () => (
+  <svg
+    className="w-iconMobile sm:w-iconSmall md:w-iconMedium lg:w-iconLarge"
+    viewBox="0 0 50 50"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <title>npm icon</title>
+    <path
+      fill="currentColor"
+      d="M0 15h50v20H25v3.33H15V35H0V15zm5 15h5v-10h3.33v10H15V18.33H5V30zm15-11.67V35h5v-3.33h5V18.33H20zm5 3.34h3.33V28.33H25V21.67zm10-3.34V30h5v-10h3.33v10H50V18.33H35z"
+    />
+  </svg>
+);
+
+// Postman Icon
+export const PostmanIcon = () => (
+  <svg
+    className="w-iconMobile sm:w-iconSmall md:w-iconMedium lg:w-iconLarge"
+    viewBox="0 0 256 256"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <title>Postman icon</title>
+    <circle cx="128" cy="128" r="128" fill="currentColor" />
+    <g transform="translate(50.18, 45.2)">
+      <path className="fill-bg-card group-hover:fill-primary" d="M124.02,36.99 L70.01,90.99 L54.78,75.76 C107.89,22.65 113.14,27.26 124.02,36.99 Z" />
+      <path className="fill-bg-card group-hover:fill-primary" d="M85.5,106.48 L70.78,91.76 L124.79,37.75 C139.25,52.34 117.62,76.02 85.5,106.48 Z" />
+      <path className="fill-bg-card group-hover:fill-primary" d="M55.04,76.15 L65.92,87.02 C66.17,87.28 66.17,87.54 65.92,87.79 L43.14,92.78 C41.99,92.91 40.96,92.14 40.71,90.99 C40.58,90.35 40.83,89.71 41.22,89.33 L54.27,76.27 C54.53,76.02 54.91,75.89 55.04,76.15 Z" />
+      <path className="fill-bg-card group-hover:fill-primary" d="M152.56,7.04 C144.37,-0.9 131.19,-0.64 123.25,7.68 C115.32,16 115.57,29.05 123.89,36.99 C130.67,43.51 140.91,44.66 148.97,39.8 L134.38,25.21 L152.56,7.04 Z" />
+      <path className="fill-bg-card group-hover:fill-primary" d="M152.94,7.42 L152.69,7.17 L134.38,25.21 L148.85,39.67 C150.25,38.78 151.66,37.75 152.81,36.6 C161,28.54 161,15.49 152.94,7.42 Z" />
+      <path className="fill-bg-card group-hover:fill-primary" d="M126.19,39.29 C123.12,36.22 118.13,36.22 115.06,39.29 L66.81,87.54 L74.88,95.6 L125.94,50.81 C129.27,47.99 129.52,43 126.71,39.67 L126.19,39.29 Z" />
+      <path className="fill-bg-card group-hover:fill-primary" d="M29.83,142.44 L31.36,152.93 C31.88,154.21 31.11,155.75 29.7,156.13 C28.68,156.52 27.52,156.13 26.88,155.36 L12.81,141.41 L58.75,95.47 L74.62,95.73 L85.37,106.48 C82.81,108.65 67.32,123.63 29.83,142.44 Z" />
+      <path className="fill-bg-card group-hover:fill-primary" d="M1.93,152.42 L12.93,141.41 L29.32,157.8 L3.21,156 C2.06,155.88 1.29,154.85 1.42,153.7 C1.42,153.19 1.54,152.68 1.93,152.42 Z" />
+      <path className="fill-bg-card group-hover:fill-primary" d="M74.62,95.73 L60.54,98.8 C59.52,99.05 58.49,98.41 58.24,97.39 C58.11,96.75 58.24,96.11 58.75,95.6 L66.56,87.79 L74.62,95.73 Z" />
+    </g>
+  </svg>
+);
+
+// Linux Icon (Tux)
+export const LinuxIcon = () => (
+  <svg
+    className="w-iconMobile sm:w-iconSmall md:w-iconMedium lg:w-iconLarge"
+    viewBox="0 0 32 32"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <title>Linux icon</title>
+    <circle cx="16" cy="16" r="14" fill="currentColor" />
+    <path
+      className="fill-bg-card group-hover:fill-primary"
+      d="M11.3 21.9c-.1-.2-.2-.4-.3-.7-1.6-1.8-.4-4.5.8-6.3.1-.2.2-.4.4-.5 1-.8 1.2-1.6 1.3-2.7 0-.2 0-.5 0-.8-.1-1.6-.3-4.2 2.5-4.5 3.5-.3 3.2 2.9 3.2 4.9v.2c0 1.1.6 1.9 1.2 2.7.2.3.5.6.7.9 1.1 1.6 2.2 3.9.7 6.1-.2.8-.5 1.5-1 2-1.5 2-2.9 1.8-4 1.6-.3 0-.6-.1-.9-.1-.4 0-.8.1-1.1.2-1.2.2-1.6.3-3.5-2.8z"
+    />
+    <ellipse className="fill-bg-card group-hover:fill-primary" cx="15.9" cy="7.9" rx="2.1" ry="1.7" />
+    <ellipse className="fill-bg-card group-hover:fill-primary" cx="14.5" cy="10" rx=".7" ry=".9" />
+    <ellipse className="fill-bg-card group-hover:fill-primary" cx="16.9" cy="10" rx=".6" ry=".8" />
+    <circle className="fill-bg-card group-hover:fill-primary" cx="14.5" cy="10.1" r=".25" />
+    <circle className="fill-bg-card group-hover:fill-primary" cx="16.7" cy="10" r=".25" />
+    <ellipse className="fill-bg-card group-hover:fill-primary" cx="15.8" cy="17.2" rx="2.9" ry="2.5" />
+    <ellipse className="fill-bg-card group-hover:fill-primary" cx="15.85" cy="13.4" rx="1.8" ry="1.3" />
+    <path
+      className="fill-bg-card group-hover:fill-primary"
+      d="M11.7 15.3c.6-1 2-2.6.2.2-1.4 2.3-.5 3.8 0 4.2 1.3 1.2 1.3 2 .2 1.4-2.2-1.4-1.8-4-.4-5.8zM21 15.7c-.6-1.2-2.3-4.2.1-.5 2.2 3.2.7 5.4.4 5.6s-.9.4-.6-.4c.3-.8 1.6-2.2.4-4.8z"
+    />
+    <path
+      className="fill-bg-card group-hover:fill-primary"
+      d="M11.2 25.1c-1.5-.8-3.6.2-2.8-2 .2-.5-.2-1.2 0-1.7.3-.6.9-.5 1.3-.9.4-.4.6-1.1 1.3-1 .7.1 1.2 1 1.7 2.1.4.8 1.6 1.9 1.5 2.8-.1 1.3-1.6 1.6-3 .7zM21.4 24.7c1.1-1.4 3.5-1.1 1.9-3-.3-.4-.2-1.3-.6-1.6-.5-.5-1-.1-1.5-.3s-1-.7-1.6-.4c-.6.3-.7 1.2-.7 2.4 0 .9-.8 2.3-.4 3.1.6 1.2 2.1 1.1 3.1-.2z"
+    />
+    <path
+      className="fill-bg-card group-hover:fill-primary"
+      d="M14.4 10.9c.3-.3.9-.6 1.4-.3.2.2.4.2.6.3.4.2.2.5-.2.7-.2.1-.5.3-.7.2-.3 0-.5-.2-.6-.3-.3-.2-.3-.4-.2-.5l.1-.1z"
+    />
+  </svg>
+);
+
+// Windows Icon
+export const WindowsIcon = () => (
+  <svg
+    className="w-iconMobile sm:w-iconSmall md:w-iconMedium lg:w-iconLarge"
+    viewBox="0 0 48 48"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      fill="currentColor"
+      d="M6 12l15-2v14H6V12zM6 26h15v14l-15-2V26zM23 9.5L42 7v17H23V9.5zM23 26h19v17l-19-2.5V26z"
+    />
+  </svg>
+);
+
 export const frontendIcons = [
   { Icon: HtmlIcon(), name: "HTML" },
   { Icon: CSSIcon(), name: "CSS" },
   { Icon: SassIcon(), name: "SASS" },
+  { Icon: BootstrapIcon(), name: "Bootstrap" },
   { Icon: TailwindCSSIcon(), name: "Tailwind CSS" },
   { Icon: JavascriptIcon(), name: "JavaScript" },
   { Icon: TypeScriptIcon(), name: "TypeScript" },
   { Icon: ReactIcon(), name: "React" },
   { Icon: NextIcon(), name: "Next.js" },
+  { Icon: WebpackIcon(), name: "Webpack" },
 ];
 
 export const backendIcons = [
   { Icon: NodeIcon(), name: "Node.js" },
   { Icon: ExpressIcon(), name: "Express" },
   { Icon: PythonIcon(), name: "Python" },
+  { Icon: DjangoIcon(), name: "Django" },
   { Icon: PostgreSQLIcon(), name: "PostgreSQL" },
+  { Icon: MongoDBIcon(), name: "MongoDB" },
+  { Icon: FirebaseIcon(), name: "Firebase" },
+  { Icon: RestApiIcon(), name: "REST API" },
 ];
 
 export const toolIcons = [
   { Icon: GitIcon(), name: "Git" },
   { Icon: GitHubIcon(), name: "GitHub" },
+  { Icon: NpmIcon(), name: "npm" },
   { Icon: DockerIcon(), name: "Docker" },
+  { Icon: PostmanIcon(), name: "Postman" },
   { Icon: VSCodeIcon(), name: "VS Code" },
   { Icon: ClaudeCodeIcon(), name: "Claude Code" },
   { Icon: JiraIcon(), name: "Jira" },
+  { Icon: LinuxIcon(), name: "Linux" },
+  { Icon: WindowsIcon(), name: "Windows" },
 ];
 
 export const contactIcons = [

@@ -29,7 +29,8 @@ export default function AboutMe() {
               width={300}
               height={250}
               alt="Picture of the author"
-              className="max-w-[300px] h-auto relative rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="max-w-[300px] relative rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+              style={{ height: "auto" }}
             />
           </div>
         </div>

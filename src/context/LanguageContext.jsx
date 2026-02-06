@@ -12,7 +12,7 @@ const translations = {
 };
 
 export function LanguageProvider({ children }) {
-  const [language, setLanguage] = useState("pl");
+  const [language, setLanguage] = useState("en");
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -23,7 +23,7 @@ export function LanguageProvider({ children }) {
         setLanguage(savedLanguage);
       }
     } catch (error) {
-      // Fallback na 'pl' gdy localStorage jest niedostępny
+      // Fallback na 'en' gdy localStorage jest niedostępny
       console.warn("localStorage is not available:", error);
     }
   }, []);

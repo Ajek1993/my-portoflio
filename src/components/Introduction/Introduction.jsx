@@ -9,7 +9,7 @@ export default function Introduction() {
   return (
     <section
       id="home"
-      className="h-screen mx-auto flex flex-col justify-center sm:items-start items-center text-center sm:text-start px-4 md:px-6 lg:px-24 xl:px-36"
+      className="h-[calc(100vh-65px)] mx-auto flex flex-col justify-center sm:items-start items-center text-center sm:text-start px-4 md:px-6 lg:px-24 xl:px-36"
     >
       <p
         data-aos="fade-in"
