@@ -10,8 +10,6 @@ import {
   projectPath,
 } from "@/lib/projects";
 import { projectSchema } from "@/lib/structuredData";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
 import Badge from "@/components/ui/Badge";
 import Button from "@/components/ui/Button";
 import CompactProjectCard from "@/components/ui/CompactProjectCard";
@@ -72,8 +70,6 @@ export default async function ProjectPage({ params }) {
 
   return (
     <>
-      <JsonLd data={projectSchema(project, `${site.url}${path}`)} />
-      <Navbar />
       <main id="tresc">
         <article className="mx-auto max-w-4xl px-4 pt-10 pb-20 sm:px-6 sm:pt-14">
           <nav aria-label={projectPage.breadcrumbLabel} className="text-sm text-subtle">
@@ -242,8 +238,8 @@ export default async function ProjectPage({ params }) {
             </div>
           </section>
         )}
+        <JsonLd data={projectSchema(project, `${site.url}${path}`)} />
       </main>
-      <Footer />
     </>
   );
 }

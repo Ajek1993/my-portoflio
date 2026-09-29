@@ -3,6 +3,8 @@ import { Analytics } from "@vercel/analytics/next";
 import { site } from "@/content/pl";
 import { personSchema } from "@/lib/structuredData";
 import JsonLd from "@/components/ui/JsonLd";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -41,10 +43,16 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="pl" className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html
+      lang="pl"
+      data-scroll-behavior="smooth"
+      className={`${geistSans.variable} ${geistMono.variable}`}
+    >
       <body>
         <JsonLd data={personSchema()} />
+        <Navbar />
         {children}
+        <Footer />
         <Analytics />
       </body>
     </html>
