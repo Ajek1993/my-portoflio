@@ -37,7 +37,9 @@ export default function Button({
   );
 
   if (href) {
-    const externalProps = external ? { target: "_blank", rel: "noopener noreferrer" } : {};
+    const externalProps = external
+      ? { target: "_blank", rel: "noopener noreferrer" }
+      : {};
     return (
       <a href={href} className={classes} {...externalProps} {...rest}>
         {content}

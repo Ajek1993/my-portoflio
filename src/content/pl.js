@@ -78,23 +78,56 @@ export const howIWork = {
   title: "Najpierw plan, potem kod",
   lead: "Każdy projekt przechodzi przez tę samą ścieżkę — metodę PAF (Practical AI Framework). AI pisze dużo kodu, ale według planu, który ustalamy razem. Dzięki temu model nie zgaduje, a Ty wiesz, co dostaniesz.",
   steps: [
-    { title: "Pomysł i persona", text: "Rozmawiamy o problemie i o tym, kto będzie z aplikacji korzystał." },
-    { title: "Specyfikacja", text: "Spisuję, co aplikacja ma robić — bez technologii, językiem użytkownika." },
-    { title: "User stories", text: "Konkretne sytuacje i pytania „a co, jeśli…”. Odpowiedzi to decyzje projektowe." },
-    { title: "Architektura", text: "Dobieram technologie do skali: tak prosto, jak się da." },
-    { title: "PRD", text: "Zamknięty zakres: co robimy, czego nie robimy i kiedy jest gotowe." },
-    { title: "SPEC", text: "Zasady pracy nad kodem: struktura, styl, testy i granice dla AI." },
-    { title: "Taski", text: "Małe, sprawdzalne zadania — realizowane i przeglądane po kolei." },
-    { title: "Realizacja i testy", text: "Kod powstaje z AI, a testy, przegląd i wdrożenie zamykają każdy etap." },
+    {
+      title: "Pomysł i persona",
+      text: "Rozmawiamy o problemie i o tym, kto będzie z aplikacji korzystał.",
+    },
+    {
+      title: "Specyfikacja",
+      text: "Spisuję, co aplikacja ma robić — bez technologii, językiem użytkownika.",
+    },
+    {
+      title: "User stories",
+      text: "Konkretne sytuacje i pytania „a co, jeśli…”. Odpowiedzi to decyzje projektowe.",
+    },
+    {
+      title: "Architektura",
+      text: "Dobieram technologie do skali: tak prosto, jak się da.",
+    },
+    {
+      title: "PRD",
+      text: "Zamknięty zakres: co robimy, czego nie robimy i kiedy jest gotowe.",
+    },
+    {
+      title: "SPEC",
+      text: "Zasady pracy nad kodem: struktura, styl, testy i granice dla AI.",
+    },
+    {
+      title: "Taski",
+      text: "Małe, sprawdzalne zadania — realizowane i przeglądane po kolei.",
+    },
+    {
+      title: "Realizacja i testy",
+      text: "Kod powstaje z AI, a testy, przegląd i wdrożenie zamykają każdy etap.",
+    },
   ],
   split: {
     me: {
       title: "Po mojej stronie",
-      items: ["rozmowa o procesie i decyzje", "specyfikacja i zakres", "przegląd każdego etapu", "testy i wdrożenie"],
+      items: [
+        "rozmowa o procesie i decyzje",
+        "specyfikacja i zakres",
+        "przegląd każdego etapu",
+        "testy i wdrożenie",
+      ],
     },
     ai: {
       title: "Po stronie AI",
-      items: ["szybkie pisanie kodu według planu", "pierwsze wersje tekstów i dokumentacji", "wyłapywanie przypadków brzegowych"],
+      items: [
+        "szybkie pisanie kodu według planu",
+        "pierwsze wersje tekstów i dokumentacji",
+        "wyłapywanie przypadków brzegowych",
+      ],
     },
   },
   toolkit: {

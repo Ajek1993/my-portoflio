@@ -6,10 +6,15 @@ export default function SectionHeading({ id, eyebrow, title, lead, className = "
           {eyebrow}
         </p>
       )}
-      <h2 id={id} className="mt-3 text-3xl font-semibold tracking-tight text-balance sm:text-4xl">
+      <h2
+        id={id}
+        className="mt-3 text-3xl font-semibold tracking-tight text-balance sm:text-4xl"
+      >
         {title}
       </h2>
-      {lead && <p className="mt-4 text-base leading-relaxed text-muted sm:text-lg">{lead}</p>}
+      {lead && (
+        <p className="mt-4 text-base leading-relaxed text-muted sm:text-lg">{lead}</p>
+      )}
     </div>
   );
 }

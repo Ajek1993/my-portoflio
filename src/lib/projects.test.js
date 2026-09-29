@@ -17,7 +17,11 @@ describe("getProjectsByGroup", () => {
   });
 
   it("sorts by order and puts archived projects last", () => {
-    expect(getProjectsByGroup(sample, "main").map((p) => p.slug)).toEqual(["a", "c", "b"]);
+    expect(getProjectsByGroup(sample, "main").map((p) => p.slug)).toEqual([
+      "a",
+      "c",
+      "b",
+    ]);
   });
 });
 

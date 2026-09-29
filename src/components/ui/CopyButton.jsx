@@ -23,7 +23,8 @@ export default function CopyButton({ value, label, copyText, copiedText, failedT
     }
   }
 
-  const text = state === "copied" ? copiedText : state === "failed" ? failedText : copyText;
+  const text =
+    state === "copied" ? copiedText : state === "failed" ? failedText : copyText;
 
   return (
     <button

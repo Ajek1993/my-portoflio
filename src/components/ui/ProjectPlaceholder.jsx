@@ -18,7 +18,9 @@ export default function ProjectPlaceholder({ name, category, label }) {
         <Icon name={category} className="size-5" />
       </span>
       <div className="relative">
-        <p className="font-mono text-[11px] tracking-widest text-muted uppercase">{label}</p>
+        <p className="font-mono text-[11px] tracking-widest text-muted uppercase">
+          {label}
+        </p>
         <p className="mt-1 text-lg font-semibold tracking-tight text-fg">{name}</p>
       </div>
     </div>

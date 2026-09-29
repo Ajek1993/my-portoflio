@@ -28,14 +28,24 @@ export const projects = [
     status: "production",
     category: "business",
     client: "wypożyczalnia aut",
-    summary: "Aplikacja PWA, w której ~15 kierowców przejmuje zlecenia dostaw zamiast ustalać je przez telefon.",
+    summary:
+      "Aplikacja PWA, w której ~15 kierowców przejmuje zlecenia dostaw zamiast ustalać je przez telefon.",
     problem:
       "Kierowcy wypożyczalni aut koordynowali dostawy i odbiory przez telefon i komunikatory — bez historii, kto co przejął i kiedy.",
     solution:
       "Aplikacja instalowana na telefonie: zlecenia pogrupowane po dniach, przypisywanie się do zleceń, historia zmian, dyspozycyjność, powiadomienia push, tryb offline, dokumenty OC sprawcy w PDF i eksport do Excela. Wyrosła z pierwszej, prostszej wersji do ewidencji kursów.",
     outcome:
       "Używana codziennie przez cały zespół. Publiczna wersja demo pokazuje wszystkie funkcje na fikcyjnych danych.",
-    stack: ["React", "Vite", "Supabase", "PostgreSQL", "Realtime", "Web Push", "PWA", "Vitest"],
+    stack: [
+      "React",
+      "Vite",
+      "Supabase",
+      "PostgreSQL",
+      "Realtime",
+      "Web Push",
+      "PWA",
+      "Vitest",
+    ],
     repo: "https://github.com/Ajek1993/Demo-RentalToDoApp",
     live: null,
     demo: null,
@@ -55,7 +65,8 @@ export const projects = [
       "Budżet w arkuszu wymaga dyscypliny: każdą kwotę trzeba ręcznie wpisać we właściwe miejsce, więc szybko się go porzuca.",
     solution:
       "Czat, w którym wpisujesz lub dyktujesz wydatek zwykłym zdaniem. Model językowy zamienia go na edytowalny „paragon” do zatwierdzenia. Limity miesięczne, koszty stałe naliczane automatycznie, pytania typu „ile zaoszczędziłem w pierwszym kwartale?” i kopia zapasowa w Google Sheets.",
-    outcome: "Używana na co dzień w domu. Każda zmiana w danych przechodzi przez podgląd i zatwierdzenie.",
+    outcome:
+      "Używana na co dzień w domu. Każda zmiana w danych przechodzi przez podgląd i zatwierdzenie.",
     stack: ["Python", "LLM", "Supabase", "PostgreSQL", "Google Sheets API", "Vercel"],
     repo: null,
     live: null,
@@ -71,14 +82,24 @@ export const projects = [
     status: "production",
     category: "business",
     client: "serwis samochodowy",
-    summary: "Grafik mechaników z kafelkami wizyt i wyszukiwarką historii auta po numerze rejestracyjnym.",
+    summary:
+      "Grafik mechaników z kafelkami wizyt i wyszukiwarką historii auta po numerze rejestracyjnym.",
     problem:
       "Serwis planował pracę mechaników na kartkach, a historia napraw konkretnego auta była rozproszona poza głównym systemem warsztatu.",
     solution:
       "Grafik pięciu stanowisk z kafelkami wizyt (przeciąganie, rozciąganie, kontynuacje napraw), grafik zmian z nieobecnościami, wyszukiwarka historii auta, logowanie PIN-em i odświeżanie na żywo między stanowiskami. Uzupełnia istniejący system warsztatu zamiast go zastępować.",
     outcome:
       "Wdrożona i używana przez recepcję i mechaników. Rozwijana w kolejnych fazach na podstawie uwag z pierwszych dni pracy.",
-    stack: ["Next.js", "React", "TypeScript", "Supabase", "PostgreSQL", "Tailwind CSS", "Vitest", "Playwright"],
+    stack: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Supabase",
+      "PostgreSQL",
+      "Tailwind CSS",
+      "Vitest",
+      "Playwright",
+    ],
     repo: null,
     live: null,
     demo: null,
@@ -93,7 +114,8 @@ export const projects = [
     status: "production",
     category: "web",
     client: "twórczyni kanału YouTube",
-    summary: "Strona kanału z gameplayami Tomb Raider — filmy pobierają się same, zapowiedzi streamów z panelu.",
+    summary:
+      "Strona kanału z gameplayami Tomb Raider — filmy pobierają się same, zapowiedzi streamów z panelu.",
     problem:
       "Twórczyni kanału potrzebowała strony z gameplayami i zapowiedziami streamów, bez ręcznego wklejania każdego filmu.",
     solution:
@@ -114,8 +136,10 @@ export const projects = [
     status: "production",
     category: "web",
     client: "apartament na wynajem krótkoterminowy",
-    summary: "Strona apartamentu z cennikiem, zapytaniem o rezerwację i sprawdzaniem wolnych terminów.",
-    problem: "Apartament był dostępny tylko przez Booking i Airbnb — każda rezerwacja oznaczała prowizję.",
+    summary:
+      "Strona apartamentu z cennikiem, zapytaniem o rezerwację i sprawdzaniem wolnych terminów.",
+    problem:
+      "Apartament był dostępny tylko przez Booking i Airbnb — każda rezerwacja oznaczała prowizję.",
     solution:
       "Strona z galerią, cennikiem i formularzem zapytania wysyłanym mailem. Wyszukiwarka dat sprawdza wolne terminy na podstawie kalendarzy Booking i Airbnb i od razu pokazuje cenę pobytu.",
     outcome: "Własny kanał rezerwacji bezpośrednich.",
@@ -134,7 +158,8 @@ export const projects = [
     status: "own",
     category: "ai",
     client: null,
-    summary: "Katalog przedmiotów na sprzedaż z asystentem AI, który przygotowuje oferty na Allegro, OLX i Vinted.",
+    summary:
+      "Katalog przedmiotów na sprzedaż z asystentem AI, który przygotowuje oferty na Allegro, OLX i Vinted.",
     problem:
       "Setki przedmiotów do sprzedania — opisy, wyceny i zdjęcia rozproszone po folderach, każda oferta pisana od zera.",
     solution:
@@ -155,12 +180,14 @@ export const projects = [
     status: "production",
     category: "automation",
     client: "szpital",
-    summary: "Desktopowy rejestr zakażeń szpitalnych ze statystykami — zamiast arkuszy Excela.",
+    summary:
+      "Desktopowy rejestr zakażeń szpitalnych ze statystykami — zamiast arkuszy Excela.",
     problem:
       "Rejestr zakażeń szpitalnych prowadzony w arkuszach: ręczne zestawienia, brak kontroli duplikatów i brak ochrony wrażliwych danych.",
     solution:
       "Aplikacja na Windows działająca w pełni offline: alerty mikrobiologiczne, rejestr zakażeń, statystyki półroczne i roczne, słowniki, import starych plików xlsx, raporty PDF oraz szyfrowana baza z kodem odzyskiwania.",
-    outcome: "Dane nie opuszczają komputera szpitala, a zestawienia generują się automatycznie.",
+    outcome:
+      "Dane nie opuszczają komputera szpitala, a zestawienia generują się automatycznie.",
     stack: ["Electron", "React", "TypeScript", "SQLite", "Drizzle ORM", "Tailwind CSS"],
     repo: null,
     live: null,
@@ -176,7 +203,8 @@ export const projects = [
     status: "own",
     category: "ai",
     client: null,
-    summary: "Napisy, tłumaczenie i polski dubbing do filmów z YouTube lub z dysku — automatycznie.",
+    summary:
+      "Napisy, tłumaczenie i polski dubbing do filmów z YouTube lub z dysku — automatycznie.",
     problem: "Ręczne tworzenie napisów i tłumaczeń do filmów zajmuje godziny.",
     solution:
       "Narzędzie, które transkrybuje wideo do napisów SRT modelem Whisper, tłumaczy je między polskim a angielskim z pomocą modeli językowych i generuje polską ścieżkę lektora zsynchronizowaną z obrazem. Z interfejsem graficznym i wersją w Dockerze z obsługą GPU.",
@@ -197,7 +225,8 @@ export const projects = [
     status: "own",
     category: "automation",
     client: null,
-    summary: "Pipeline, który z pobazgranych powojennych książek dla dzieci robi czyste e-booki z lektorem.",
+    summary:
+      "Pipeline, który z pobazgranych powojennych książek dla dzieci robi czyste e-booki z lektorem.",
     problem: "Stare książki dla dzieci w złym stanie, fotografowane telefonem.",
     solution:
       "Kadrowanie i prostowanie stron ze zdjęć, usuwanie bazgrołów i palców, rozpoznawanie tekstu i nagranie lektora — aż do gotowej książki w czytniku.",
@@ -217,7 +246,8 @@ export const projects = [
     status: "own",
     category: "ai",
     client: null,
-    summary: "Kreator briefu projektowego, który zbiera oceny od kilku modeli AI i składa z nich plan prac.",
+    summary:
+      "Kreator briefu projektowego, który zbiera oceny od kilku modeli AI i składa z nich plan prac.",
     problem: "Briefy projektowe pisane bez struktury i bez drugiej opinii.",
     solution:
       "Osiem kroków: brief, oceny od kilku modeli AI, synteza do MVP, wybór technologii, etapy, plan prac, kontrola spójności i eksport do Markdown. Z dyktowaniem głosem.",
@@ -237,9 +267,11 @@ export const projects = [
     status: "own",
     category: "web",
     client: null,
-    summary: "Analiza częstotliwości sekwencji liczb z pełnej historii losowań od 1957 roku.",
+    summary:
+      "Analiza częstotliwości sekwencji liczb z pełnej historii losowań od 1957 roku.",
     problem: "Ciekawość: czy w historii losowań widać jakiekolwiek wzorce?",
-    solution: "Parser pełnej historii losowań, wykresy najczęstszych sekwencji i przeglądarka historii.",
+    solution:
+      "Parser pełnej historii losowań, wykresy najczęstszych sekwencji i przeglądarka historii.",
     outcome: "Odpowiedź: nie widać — ale wykresy są ładne.",
     stack: ["Next.js", "TypeScript", "Tailwind CSS"],
     repo: null,
