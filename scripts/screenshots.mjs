@@ -25,10 +25,10 @@ for (const viewport of VIEWPORTS) {
   // Scroll through the page so scroll-in sections become visible.
   await page.evaluate(async () => {
     for (let y = 0; y < document.body.scrollHeight; y += window.innerHeight / 2) {
-      window.scrollTo(0, y);
+      window.scrollTo({ top: y, behavior: "instant" });
       await new Promise((resolve) => setTimeout(resolve, 60));
     }
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, behavior: "instant" });
   });
   await page.waitForTimeout(700);
 
@@ -39,6 +39,12 @@ for (const viewport of VIEWPORTS) {
 
   await page.screenshot({ path: `${OUT_DIR}/${viewport.name}-hero.png` });
   await page.screenshot({ path: `${OUT_DIR}/${viewport.name}-full.png`, fullPage: true });
+
+  const sections = await page.locator("main > section").all();
+  for (const [index, section] of sections.entries()) {
+    const id = (await section.getAttribute("id")) ?? `section-${index + 1}`;
+    await section.screenshot({ path: `${OUT_DIR}/${viewport.name}-${id}.png` });
+  }
   console.log(`saved ${OUT_DIR}/${viewport.name}-*.png`);
   await page.close();
 }

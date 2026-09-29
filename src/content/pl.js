@@ -69,6 +69,7 @@ export const whatIDo = {
       example: "Budżet domowy prowadzony rozmową, napisy i dubbing do filmów.",
     },
   ],
+  exampleLabel: "Np.",
   seeProjects: "Zobacz przykłady",
 };
 
