@@ -165,6 +165,7 @@ export const projectCard = {
   stack: "Technologie",
   client: "Dla",
   privateCode: "Kod prywatny — pokażę na rozmowie",
+  privateCodeShort: "Kod prywatny",
   links: {
     live: "Zobacz stronę",
     demo: "Zobacz demo",

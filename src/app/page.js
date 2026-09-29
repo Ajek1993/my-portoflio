@@ -4,6 +4,7 @@ import Hero from "@/components/sections/Hero";
 import WhatIDo from "@/components/sections/WhatIDo";
 import HowIWork from "@/components/sections/HowIWork";
 import Projects from "@/components/sections/Projects";
+import MoreProjects from "@/components/sections/MoreProjects";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <WhatIDo />
         <HowIWork />
         <Projects />
+        <MoreProjects />
       </main>
       <Footer />
     </>
