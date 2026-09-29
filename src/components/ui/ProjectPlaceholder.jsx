@@ -1,27 +1,47 @@
 import Icon from "./Icon";
 
-/** Intentional-looking 16:9 tile used until a real screenshot is added. */
-export default function ProjectPlaceholder({ name, category, label }) {
+const SKELETON_ROWS = ["w-3/4", "w-1/2", "w-2/3", "w-5/12"];
+
+/**
+ * Intentional-looking 16:9 tile used until a real screenshot is added:
+ * an abstract app window tinted with the project category color.
+ */
+export default function ProjectPlaceholder({ name, category }) {
   return (
     <div
-      className="relative flex aspect-video w-full flex-col justify-between overflow-hidden bg-surface-2 p-5"
+      className="relative flex aspect-video w-full items-end justify-center overflow-hidden bg-surface-2 px-6 pt-8 sm:px-10"
       style={{ "--cat": `var(--color-cat-${category})` }}
       role="img"
       aria-label={name}
     >
       <div
-        className="absolute inset-0 bg-[radial-gradient(120%_90%_at_100%_0%,color-mix(in_oklab,var(--cat)_35%,transparent),transparent_60%)]"
+        className="absolute inset-0 bg-[radial-gradient(90%_80%_at_50%_0%,color-mix(in_oklab,var(--cat)_30%,transparent),transparent_70%)]"
         aria-hidden="true"
       />
-      <div className="bg-grid absolute inset-0 opacity-60" aria-hidden="true" />
-      <span className="relative inline-flex size-10 items-center justify-center rounded-xl border border-[color-mix(in_oklab,var(--cat)_40%,transparent)] bg-bg/60 text-(--cat)">
-        <Icon name={category} className="size-5" />
-      </span>
-      <div className="relative">
-        <p className="font-mono text-[11px] tracking-widest text-muted uppercase">
-          {label}
-        </p>
-        <p className="mt-1 text-lg font-semibold tracking-tight text-fg">{name}</p>
+      <div className="bg-grid absolute inset-0 opacity-50" aria-hidden="true" />
+
+      <div
+        className="relative w-full max-w-md rounded-t-xl border border-b-0 border-[color-mix(in_oklab,var(--cat)_35%,var(--color-border))] bg-bg/90 shadow-2xl"
+        aria-hidden="true"
+      >
+        <div className="flex items-center gap-1.5 border-b border-border px-3 py-2.5">
+          <span className="size-2 rounded-full bg-border-strong" />
+          <span className="size-2 rounded-full bg-border-strong" />
+          <span className="size-2 rounded-full bg-border-strong" />
+        </div>
+        <div className="flex gap-4 p-4">
+          <span className="flex size-10 shrink-0 items-center justify-center rounded-lg bg-[color-mix(in_oklab,var(--cat)_15%,transparent)] text-(--cat)">
+            <Icon name={category} className="size-5" />
+          </span>
+          <div className="flex-1 space-y-2.5 pt-1">
+            {SKELETON_ROWS.map((width, index) => (
+              <div
+                key={width}
+                className={`h-2 rounded-full ${width} ${index === 0 ? "bg-[color-mix(in_oklab,var(--cat)_55%,transparent)]" : "bg-surface-2"}`}
+              />
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );

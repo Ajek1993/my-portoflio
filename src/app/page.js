@@ -3,6 +3,7 @@ import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
 import WhatIDo from "@/components/sections/WhatIDo";
 import HowIWork from "@/components/sections/HowIWork";
+import Projects from "@/components/sections/Projects";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <Hero />
         <WhatIDo />
         <HowIWork />
+        <Projects />
       </main>
       <Footer />
     </>
