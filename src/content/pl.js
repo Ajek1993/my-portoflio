@@ -195,6 +195,7 @@ export const about = {
     "Tam zobaczyłem, ile czasu ludzie tracą na ręczne ustalanie, przepisywanie i pilnowanie rzeczy, które mógłby robić program. Komputery fascynowały mnie od dziecka, więc skończyłem kurs JavaScript i React i zacząłem budować.",
     "Dziś tworzę aplikacje dla firm i dla siebie, pracując z narzędziami AI. Najbardziej lubię moment, w którym proces, który kogoś męczył, po prostu przestaje być problemem.",
   ],
+  photo: "/selfie.JPEG",
   photoAlt: "Arkadiusz Sarach",
   timeline: [
     { label: "Górnictwo", text: "wykształcenie" },
