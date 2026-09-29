@@ -2,10 +2,25 @@ import { pluralPl } from "@/lib/plural";
 
 export const site = {
   name: "Arkadiusz Sarach",
-  title: "Arkadiusz Sarach — aplikacje i automatyzacja dla biznesu",
+  title: "Aplikacje dla firm i automatyzacja procesów | Arkadiusz Sarach",
+  shortTitle: "Arkadiusz Sarach",
   description:
-    "Tworzę aplikacje i automatyzację na potrzeby biznesowe. Rozwiązuję konkretne problemy — z pomocą narzędzi AI.",
-  url: "https://my-portoflio-mu.vercel.app",
+    "Tworzę aplikacje webowe dla firm i automatyzuję procesy z pomocą AI: grafiki, zlecenia, rejestry, integracje. Pracuję zdalnie z firmami z całej Polski.",
+  url: "https://www.arkadiuszsarach.dev",
+  jobTitle: "Twórca aplikacji biznesowych i automatyzacji procesów",
+  areaServed: "Polska",
+  keywords: [
+    "aplikacje dla firm",
+    "aplikacja webowa dla firmy",
+    "automatyzacja procesów",
+    "automatyzacja pracy biurowej",
+    "aplikacje na zamówienie",
+    "aplikacje z AI",
+    "Next.js",
+    "React",
+    "Python",
+  ],
+  serviceName: "Aplikacje dla firm i automatyzacja procesów",
 };
 
 export const contact = {
@@ -22,11 +37,11 @@ export const nav = {
   skipLink: "Przejdź do treści",
   homeLabel: "Arkadiusz Sarach — strona główna",
   links: [
-    { href: "#co-robie", label: "Co robię" },
-    { href: "#jak-pracuje", label: "Jak pracuję" },
-    { href: "#projekty", label: "Projekty" },
-    { href: "#o-mnie", label: "O mnie" },
-    { href: "#kontakt", label: "Kontakt" },
+    { href: "/#co-robie", label: "Co robię" },
+    { href: "/#jak-pracuje", label: "Jak pracuję" },
+    { href: "/#projekty", label: "Projekty" },
+    { href: "/#o-mnie", label: "O mnie" },
+    { href: "/#kontakt", label: "Kontakt" },
   ],
   cta: "Napisz do mnie",
   openMenu: "Otwórz menu",
@@ -34,7 +49,7 @@ export const nav = {
 };
 
 export const hero = {
-  eyebrow: "Arkadiusz Sarach · aplikacje, automatyzacja, AI",
+  eyebrow: "Arkadiusz Sarach · aplikacje dla firm · automatyzacja procesów · AI",
   headline: "Tworzę aplikacje i automatyzację na potrzeby biznesowe.",
   headlineAccent: "Rozwiązuję konkretne problemy.",
   lead: "Zamieniam ręczną pracę — arkusze, telefony, przepisywanie danych — w proste aplikacje, które ułatwiają ludziom codzienną robotę. Pracuję z narzędziami AI, ale decyzje i jakość zostają po mojej stronie.",
@@ -225,7 +240,7 @@ export const contactSection = {
   id: "kontakt",
   eyebrow: "Kontakt",
   title: "Potrzebujesz pomocy z procesami w firmie? Odezwij się.",
-  lead: "Nie ma problemu, którego nie da się rozwiązać. Napisz — porozmawiamy o Twoim.",
+  lead: "Nie ma problemu, którego nie da się rozwiązać. Napisz — porozmawiamy o Twoim. Pracuję zdalnie z firmami z całej Polski.",
   writeCta: "Napisz maila",
   copy: "Kopiuj",
   copied: "Skopiowano",

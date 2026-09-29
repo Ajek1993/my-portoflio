@@ -1,6 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { site } from "@/content/pl";
+import { personSchema } from "@/lib/structuredData";
+import JsonLd from "@/components/ui/JsonLd";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -11,8 +13,13 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"]
 
 export const metadata = {
   metadataBase: new URL(site.url),
-  title: site.title,
+  title: { default: site.title, template: `%s | ${site.shortTitle}` },
   description: site.description,
+  keywords: site.keywords,
+  authors: [{ name: site.name, url: site.url }],
+  creator: site.name,
+  alternates: { canonical: "/" },
+  robots: { index: true, follow: true },
   openGraph: {
     title: site.title,
     description: site.description,
@@ -36,6 +43,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pl" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body>
+        <JsonLd data={personSchema()} />
         {children}
         <Analytics />
       </body>
