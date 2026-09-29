@@ -1,25 +1,27 @@
-"use client";
-
-import AboutMe from "@/components/AboutMe/AboutMe";
-import Introduction from "@/components/Introduction/Introduction";
-import Header from "@/components/Header";
-import Projects from "@/components/Projects/Projects";
-import Technologies from "@/components/Technologies/Technologies";
-import Contact from "@/components/Contact/Contact";
-import Footer from "@/components/Footer";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
+import Hero from "@/components/sections/Hero";
+import WhatIDo from "@/components/sections/WhatIDo";
+import HowIWork from "@/components/sections/HowIWork";
+import Projects from "@/components/sections/Projects";
+import MoreProjects from "@/components/sections/MoreProjects";
+import About from "@/components/sections/About";
+import Contact from "@/components/sections/Contact";
 
 export default function Home() {
   return (
-    <div className="xl:container">
-      <Header />
-      <main className="overflow-hidden">
-        <Introduction />
-        <AboutMe />
+    <>
+      <Navbar />
+      <main id="tresc">
+        <Hero />
+        <WhatIDo />
+        <HowIWork />
         <Projects />
-        <Technologies />
+        <MoreProjects />
+        <About />
         <Contact />
       </main>
       <Footer />
-    </div>
+    </>
   );
 }
