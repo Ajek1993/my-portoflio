@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 import Badge from "./Badge";
 import Icon from "./Icon";
@@ -45,7 +46,7 @@ function ProjectLinks({ project, labels }) {
   );
 }
 
-export default function ProjectCard({ project, labels }) {
+export default function ProjectCard({ project, labels, href }) {
   const statusColor = `var(--color-status-${project.status})`;
   const categoryLabel = labels.categories[project.category];
 
@@ -80,7 +81,15 @@ export default function ProjectCard({ project, labels }) {
           <Badge color={`var(--color-cat-${project.category})`}>{categoryLabel}</Badge>
         </div>
 
-        <h3 className="mt-4 text-xl font-semibold tracking-tight">{project.name}</h3>
+        <h3 className="mt-4 text-xl font-semibold tracking-tight">
+          {href ? (
+            <Link href={href} className="hover:text-accent">
+              {project.name}
+            </Link>
+          ) : (
+            project.name
+          )}
+        </h3>
         {project.client && (
           <p className="mt-1 text-sm text-subtle">
             {labels.client} {project.client}
@@ -99,30 +108,15 @@ export default function ProjectCard({ project, labels }) {
           ))}
         </ul>
 
-        <details className="group mt-6 border-t border-border pt-4 [&[open]_.chevron]:rotate-45">
-          <summary className="flex list-none items-center justify-between gap-2 rounded-md text-sm font-medium text-fg">
-            <span className="group-open:hidden">{labels.details}</span>
-            <span className="hidden group-open:inline">{labels.hideDetails}</span>
-            <Icon
-              name="plus"
-              className="chevron size-4 text-accent transition-transform"
-            />
-          </summary>
-          <dl className="mt-4 space-y-4 text-sm leading-relaxed">
-            {[
-              ["problem", labels.problem],
-              ["solution", labels.solution],
-              ["outcome", labels.outcome],
-            ].map(([key, label]) => (
-              <div key={key}>
-                <dt className="font-mono text-xs tracking-widest text-accent uppercase">
-                  {label}
-                </dt>
-                <dd className="mt-1 text-muted">{project[key]}</dd>
-              </div>
-            ))}
-          </dl>
-        </details>
+        {href && (
+          <Link
+            href={href}
+            className="mt-6 inline-flex items-center gap-1.5 border-t border-border pt-4 text-sm font-medium text-accent hover:underline"
+          >
+            {labels.more}
+            <Icon name="arrowRight" className="size-4" />
+          </Link>
+        )}
 
         <div className="mt-auto pt-6">
           <ProjectLinks project={project} labels={labels} />

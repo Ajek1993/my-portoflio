@@ -3,6 +3,7 @@
  *
  * Fields:
  * - slug      kebab-case id, also the image file name in /public/projects
+ * - page      Polish URL slug of the project subpage (/projekty/<page>); main and casual only
  * - name      display name
  * - group     "main" | "casual" | "course"
  * - order     ascending number within the group
@@ -21,6 +22,7 @@
 export const projects = [
   {
     slug: "rental-orders",
+    page: "system-zlecen-wypozyczalni",
     name: "System Zleceń Wypożyczalni",
     group: "main",
     order: 1,
@@ -53,6 +55,7 @@ export const projects = [
   },
   {
     slug: "home-budget",
+    page: "budzet-domowy-z-ai",
     name: "Home Budget App",
     group: "main",
     order: 2,
@@ -75,6 +78,7 @@ export const projects = [
   },
   {
     slug: "car-service-schedule",
+    page: "grafik-serwisu-samochodowego",
     name: "Grafik serwisu samochodowego",
     group: "main",
     order: 3,
@@ -107,6 +111,7 @@ export const projects = [
   },
   {
     slug: "bruxa-gaming",
+    page: "strona-kanalu-youtube-bruxa-gaming",
     name: "Bruxa Gaming",
     group: "main",
     order: 4,
@@ -129,6 +134,7 @@ export const projects = [
   },
   {
     slug: "apartment-kabaty",
+    page: "strona-apartamentu-rytm-kabaty",
     name: "Apartament Rytm Kabaty",
     group: "main",
     order: 5,
@@ -151,6 +157,7 @@ export const projects = [
   },
   {
     slug: "allegro-catalog",
+    page: "katalog-sprzedazowy-z-ai",
     name: "Allegro 2026",
     group: "main",
     order: 6,
@@ -173,6 +180,7 @@ export const projects = [
   },
   {
     slug: "epirejestr",
+    page: "epirejestr-rejestr-zakazen-szpitalnych",
     name: "EpiRejestr",
     group: "main",
     order: 7,
@@ -196,6 +204,7 @@ export const projects = [
   },
   {
     slug: "transcription-tool",
+    page: "transkrypcja-i-dubbing-wideo",
     name: "Transcription Tool",
     group: "main",
     order: 8,
@@ -218,6 +227,7 @@ export const projects = [
 
   {
     slug: "mis-kuleczka",
+    page: "digitalizacja-ksiazek-mis-kuleczka",
     name: "Miś Kuleczka — digitalizacja książek",
     group: "casual",
     order: 1,
@@ -239,6 +249,7 @@ export const projects = [
   },
   {
     slug: "brief-maker",
+    page: "briefmaker-kreator-briefow-ai",
     name: "BriefMaker",
     group: "casual",
     order: 2,
@@ -260,6 +271,7 @@ export const projects = [
   },
   {
     slug: "lotto-calculator",
+    page: "kalkulator-lotto",
     name: "Lotto Calculator",
     group: "casual",
     order: 3,
@@ -281,6 +293,7 @@ export const projects = [
   },
   {
     slug: "daj-suchara",
+    page: "daj-suchara",
     name: "DajSuchara",
     group: "casual",
     order: 4,

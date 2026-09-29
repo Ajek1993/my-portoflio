@@ -1,6 +1,6 @@
 import { projectCard, projectsSection } from "@/content/pl";
 import { projects } from "@/data/projects";
-import { getProjectsByGroup } from "@/lib/projects";
+import { getProjectsByGroup, projectPath } from "@/lib/projects";
 import ProjectCard from "@/components/ui/ProjectCard";
 import Reveal from "@/components/ui/Reveal";
 import SectionHeading from "@/components/ui/SectionHeading";
@@ -24,7 +24,11 @@ export default function Projects() {
         <ul className="mt-12 grid gap-5 md:grid-cols-2">
           {mainProjects.map((project) => (
             <Reveal as="li" key={project.slug}>
-              <ProjectCard project={project} labels={projectCard} />
+              <ProjectCard
+                project={project}
+                labels={projectCard}
+                href={projectPath(project)}
+              />
             </Reveal>
           ))}
         </ul>

@@ -1,7 +1,13 @@
 import { existsSync } from "node:fs";
 import path from "node:path";
 import { describe, expect, it } from "vitest";
-import { CATEGORIES, GROUPS, STATUSES, getProjectsByGroup } from "@/lib/projects";
+import {
+  CATEGORIES,
+  GROUPS,
+  PROJECT_PAGE_GROUPS,
+  STATUSES,
+  getProjectsByGroup,
+} from "@/lib/projects";
 import { projects } from "./projects";
 
 const PUBLIC_REPOS = [
@@ -74,6 +80,15 @@ describe("projects data", () => {
         if (p[key]) expect(p[key], `${p.slug}.${key}`).toMatch(/^https:\/\//);
       }
     }
+  });
+
+  it("gives every main and casual project a unique Polish page slug", () => {
+    const withPages = projects.filter((p) => PROJECT_PAGE_GROUPS.includes(p.group));
+    for (const p of withPages) {
+      expect(p.page, p.slug).toMatch(/^[a-z0-9]+(-[a-z0-9]+)*$/);
+    }
+    const pages = withPages.map((p) => p.page);
+    expect(new Set(pages).size).toBe(pages.length);
   });
 
   it("keeps the agreed order of main projects", () => {

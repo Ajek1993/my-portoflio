@@ -172,13 +172,12 @@ export const projectsSection = {
 };
 
 export const projectCard = {
-  details: "Szczegóły",
-  hideDetails: "Zwiń",
+  more: "Więcej o projekcie",
   problem: "Problem",
   solution: "Co powstało",
   outcome: "Efekt",
   stack: "Technologie",
-  client: "Dla",
+  client: "Klient:",
   privateCode: "Kod prywatny — pokażę na rozmowie",
   privateCodeShort: "Kod prywatny",
   links: {
@@ -199,6 +198,25 @@ export const projectCard = {
     web: "Strona www",
   },
   imageAlt: (name) => `Zrzut ekranu projektu ${name}`,
+};
+
+export const projectPage = {
+  breadcrumbLabel: "Okruszki",
+  home: "Strona główna",
+  projects: "Projekty",
+  problem: "Problem",
+  solution: "Co powstało",
+  outcome: "Efekt",
+  stack: "Technologie",
+  links: "Linki",
+  cta: {
+    title: "Masz podobny problem w swojej firmie?",
+    text: "Nie ma problemu, którego nie da się rozwiązać. Pracuję zdalnie z firmami z całej Polski.",
+    button: "Napisz do mnie",
+  },
+  related: "Inne projekty",
+  backToProjects: "Wszystkie projekty",
+  metaTitle: (name, category) => `${name} — ${category.toLowerCase()}`,
 };
 
 export const about = {
