@@ -71,7 +71,7 @@ export const projects = [
     repo: null,
     live: null,
     demo: null,
-    image: null,
+    image: "/projects/home-budget.webp",
   },
   {
     slug: "car-service-schedule",
@@ -103,7 +103,7 @@ export const projects = [
     repo: null,
     live: null,
     demo: null,
-    image: null,
+    image: "/projects/car-service-schedule.webp",
   },
   {
     slug: "bruxa-gaming",
@@ -125,7 +125,7 @@ export const projects = [
     repo: "https://github.com/Ajek1993/TombRaiderSite",
     live: null,
     demo: null,
-    image: null,
+    image: "/projects/bruxa-gaming.webp",
   },
   {
     slug: "apartment-kabaty",
@@ -147,7 +147,7 @@ export const projects = [
     repo: null,
     live: "https://apartament-rytm-kabaty.eu",
     demo: null,
-    image: null,
+    image: "/projects/apartment-kabaty.webp",
   },
   {
     slug: "allegro-catalog",
@@ -169,7 +169,7 @@ export const projects = [
     repo: null,
     live: null,
     demo: null,
-    image: null,
+    image: "/projects/allegro-catalog.webp",
   },
   {
     slug: "epirejestr",
