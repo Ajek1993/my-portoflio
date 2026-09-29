@@ -1,6 +1,6 @@
 import { projectCard, projectsSection } from "@/content/pl";
 import { projects } from "@/data/projects";
-import { getProjectsByGroup } from "@/lib/projects";
+import { getProjectsByGroup, projectPath } from "@/lib/projects";
 import CompactProjectCard from "@/components/ui/CompactProjectCard";
 import Reveal from "@/components/ui/Reveal";
 
@@ -18,6 +18,7 @@ function Group({ id, eyebrow, title, lead, items, showImage, gridClass }) {
               project={project}
               labels={projectCard}
               showImage={showImage}
+              href={project.page ? projectPath(project) : undefined}
             />
           </Reveal>
         ))}

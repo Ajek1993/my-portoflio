@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { mailtoHref, nav, site } from "@/content/pl";
 import Button from "@/components/ui/Button";
 import MobileMenu from "./MobileMenu";
@@ -12,8 +13,8 @@ export default function Navbar() {
         {nav.skipLink}
       </a>
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
-        <a
-          href="#"
+        <Link
+          href="/"
           aria-label={nav.homeLabel}
           className="group flex items-center gap-2.5"
         >
@@ -26,7 +27,7 @@ export default function Navbar() {
           <span className="font-semibold tracking-tight whitespace-nowrap">
             {site.name}
           </span>
-        </a>
+        </Link>
 
         <nav aria-label="Główna" className="hidden lg:block">
           <ul className="flex items-center gap-1">
