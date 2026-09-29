@@ -55,25 +55,27 @@ export default function About() {
                 className="aspect-[3/4] w-full object-cover"
               />
             </div>
-            <div className="mt-4 rounded-2xl border border-border bg-surface p-5">
-              <h3 className="font-semibold">{cv.title}</h3>
-              <p className="mt-1 text-sm text-muted">{cv.text}</p>
-              <div className="mt-4 flex flex-wrap gap-2">
-                {cv.files.map((file) => (
-                  <Button
-                    key={file.href}
-                    href={file.href}
-                    variant="outline"
-                    size="sm"
-                    icon="download"
-                    iconPosition="start"
-                    external
-                  >
-                    {file.label}
-                  </Button>
-                ))}
+            {cv.visible && (
+              <div className="mt-4 rounded-2xl border border-border bg-surface p-5">
+                <h3 className="font-semibold">{cv.title}</h3>
+                <p className="mt-1 text-sm text-muted">{cv.text}</p>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {cv.files.map((file) => (
+                    <Button
+                      key={file.href}
+                      href={file.href}
+                      variant="outline"
+                      size="sm"
+                      icon="download"
+                      iconPosition="start"
+                      external
+                    >
+                      {file.label}
+                    </Button>
+                  ))}
+                </div>
               </div>
-            </div>
+            )}
           </Reveal>
         </div>
 

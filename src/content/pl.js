@@ -211,6 +211,8 @@ export const technologiesSection = {
 };
 
 export const cv = {
+  // Hidden for now; set to true to show the CV download buttons again.
+  visible: false,
   title: "CV",
   text: "Szczegóły doświadczenia znajdziesz w CV.",
   files: [
