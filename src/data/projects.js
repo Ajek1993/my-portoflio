@@ -49,7 +49,7 @@ export const projects = [
     repo: "https://github.com/Ajek1993/Demo-RentalToDoApp",
     live: null,
     demo: null,
-    image: null,
+    image: "/projects/rental-orders.webp",
   },
   {
     slug: "home-budget",
@@ -192,7 +192,7 @@ export const projects = [
     repo: null,
     live: null,
     demo: null,
-    image: null,
+    image: "/projects/epirejestr.webp",
   },
   {
     slug: "transcription-tool",
@@ -213,7 +213,7 @@ export const projects = [
     repo: "https://github.com/Ajek1993/TranscriptionApp",
     live: null,
     demo: null,
-    image: null,
+    image: "/projects/transcription-tool.webp",
   },
 
   {
